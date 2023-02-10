@@ -6,6 +6,7 @@
 
 int main(){
     ElementCreator* es = new ElementCreator();
+    es->createElement(ET_Header);
     Element* em = es->getElement();
     em->setText("lmao");
     std::cout << em->getText();

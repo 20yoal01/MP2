@@ -14,7 +14,8 @@ public:
     // but passes type to factory method "Create()"
     ElementCreator();
     ~ElementCreator();
-    Element* getElement();
+    Element* getElement() const;
+    void createElement(ElementType element);
 
 private:
     Element *pElement;

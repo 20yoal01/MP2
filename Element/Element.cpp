@@ -25,6 +25,6 @@ void Element::setText(std::string text){
     text = text;
 }
 
-std::string Element::getText(){
+std::string Element::getText() const{
     return text;
 }

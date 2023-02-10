@@ -18,7 +18,7 @@ public:
     virtual ~Element() {}
     virtual void setColor(std::string color);
     virtual void setText(std::string text);
-    virtual std::string getText();
+    virtual std::string getText() const;
     static Element* Create(ElementType type);
 };
 

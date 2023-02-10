@@ -4,11 +4,12 @@
 
 #include "ElementCreator.h"
 
+ElementCreator::ElementCreator() {
 
-ElementCreator::ElementCreator()
-{
-    ElementType type = ET_Paragraph;
-    pElement = Element::Create(type);
+}
+
+void ElementCreator::createElement(ElementType element){
+    pElement = Element::Create(element);
 }
 
 ElementCreator::~ElementCreator() {
@@ -18,6 +19,6 @@ ElementCreator::~ElementCreator() {
     }
 }
 
-Element* ElementCreator::getElement()  {
+Element* ElementCreator::getElement() const{
     return pElement;
 }

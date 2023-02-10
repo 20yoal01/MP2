@@ -11,7 +11,7 @@ public:
     void setBold(bool bold);
     void setItalics();
     void setFontSize(int fontSize);
-    std::string getText();
+    std::string getText() const;
     int getFontSize() const;
     bool isBold() const;
     bool isItalics() const;
