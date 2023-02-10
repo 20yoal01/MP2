@@ -6,6 +6,7 @@
 #define MP2_ELEMENT_H
 
 #include <iostream>
+#include "ElementType.h"
 
 class Element {
 private:

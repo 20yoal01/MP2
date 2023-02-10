@@ -7,8 +7,17 @@
 #include "../Element.h"
 
 
-class ElementFactory {
+class ElementCreator {
+public:
 
+    // Client doesn't explicitly create objects
+    // but passes type to factory method "Create()"
+    ElementCreator();
+    ~ElementCreator();
+    Element* getElement();
+
+private:
+    Element *pElement;
 };
 
 

@@ -3,7 +3,9 @@
 //
 
 #include "List.h"
+List::List(){
 
+}
 List::List(std::string text) {
     text_ = text;
 }

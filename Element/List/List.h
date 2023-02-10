@@ -14,6 +14,7 @@ private:
     bool ordered_;
 
 public:
+    List();
     List(std::string text);
     void setOrdered(bool ordered);
     void setText(std::string text);
