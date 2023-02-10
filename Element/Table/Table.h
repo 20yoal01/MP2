@@ -6,7 +6,9 @@
 #define MP2_TABLE_H
 
 
-class Table {
+#include "../Element.h"
+
+class Table : public Element{
 
 };
 

@@ -2,8 +2,9 @@
 // Created by yousi on 2023-02-09.
 //
 
-#ifndef MP2_ELEMENTFACTORY_H
-#define MP2_ELEMENTFACTORY_H
+#ifndef MP2_ELEMENTCREATOR_H
+#define MP2_ELEMENTCREATOR_H
+#include "../Element.h"
 
 
 class ElementFactory {

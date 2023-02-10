@@ -67,6 +67,12 @@ build CMakeFiles/MP2.dir/Element/Element.cpp.obj: CXX_COMPILER__MP2_Debug C$:/Us
   OBJECT_DIR = CMakeFiles\MP2.dir
   OBJECT_FILE_DIR = CMakeFiles\MP2.dir\Element
 
+build CMakeFiles/MP2.dir/Element/Creator/ElementCreator.cpp.obj: CXX_COMPILER__MP2_Debug C$:/Users/yousi/CLionProjects/MP2/Element/Creator/ElementCreator.cpp || cmake_object_order_depends_target_MP2
+  DEP_FILE = CMakeFiles\MP2.dir\Element\Creator\ElementCreator.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\MP2.dir
+  OBJECT_FILE_DIR = CMakeFiles\MP2.dir\Element\Creator
+
 build CMakeFiles/MP2.dir/Element/List/List.cpp.obj: CXX_COMPILER__MP2_Debug C$:/Users/yousi/CLionProjects/MP2/Element/List/List.cpp || cmake_object_order_depends_target_MP2
   DEP_FILE = CMakeFiles\MP2.dir\Element\List\List.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
@@ -87,7 +93,7 @@ build CMakeFiles/MP2.dir/Element/Header/Header.cpp.obj: CXX_COMPILER__MP2_Debug 
 #############################################
 # Link the executable MP2.exe
 
-build MP2.exe: CXX_EXECUTABLE_LINKER__MP2_Debug CMakeFiles/MP2.dir/main.cpp.obj CMakeFiles/MP2.dir/Element/Paragraph/Paragraph.cpp.obj CMakeFiles/MP2.dir/Element/Element.cpp.obj CMakeFiles/MP2.dir/Element/List/List.cpp.obj CMakeFiles/MP2.dir/Element/Header/Header.cpp.obj
+build MP2.exe: CXX_EXECUTABLE_LINKER__MP2_Debug CMakeFiles/MP2.dir/main.cpp.obj CMakeFiles/MP2.dir/Element/Paragraph/Paragraph.cpp.obj CMakeFiles/MP2.dir/Element/Element.cpp.obj CMakeFiles/MP2.dir/Element/Creator/ElementCreator.cpp.obj CMakeFiles/MP2.dir/Element/List/List.cpp.obj CMakeFiles/MP2.dir/Element/Header/Header.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\MP2.dir

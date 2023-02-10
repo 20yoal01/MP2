@@ -17,6 +17,8 @@ public:
     virtual ~Element() {}
     virtual void setColor(std::string color);
     virtual void setText(std::string text);
+    virtual std::string getText();
+    static Element* Create(ElementType type);
 };
 
 #endif //MP2_ELEMENT_H
