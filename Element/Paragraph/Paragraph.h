@@ -12,7 +12,10 @@ public:
     void setItalics();
     void setFontSize(int fontSize);
     std::string getText();
-
+    int getFontSize() const;
+    bool isBold() const;
+    bool isItalics() const;
+    std::string getColor() const;
 
 private:
     std::string text_;

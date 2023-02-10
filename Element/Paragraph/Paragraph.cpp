@@ -12,7 +12,18 @@ void Paragraph::setColor(std::string color){
 void Paragraph::setText(std::string text){
     text_ = text;
 }
-
 std::string Paragraph::getText() {
     return text_;
+}
+int Paragraph::getFontSize() const {
+    return fontSize;
+}
+bool Paragraph::isBold() const {
+    return bold;
+}
+bool Paragraph::isItalics() const {
+    return italics;
+}
+std::string Paragraph::getColor() const {
+    return color_;
 }

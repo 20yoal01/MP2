@@ -17,6 +17,8 @@ public:
     List(std::string text);
     void setOrdered(bool ordered);
     void setText(std::string text);
+    std::string getText() const;
+    bool isOrdered() const;
 };
 
 

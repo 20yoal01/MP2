@@ -17,6 +17,10 @@ public:
     Header(std::string text);
     void setColor(std::string color) override;
     void setText(std::string text);
+    void setFontSize(int fontSize);
+    std::string getColor() const;
+    std::string getText() const;
+    int getFontSize() const;
 };
 
 

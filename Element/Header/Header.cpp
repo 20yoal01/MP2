@@ -15,3 +15,13 @@ void Header::setColor(std::string color){
 void Header::setText(std::string text){
     text_ = text;
 }
+
+std::string Header::getColor() const{
+    return color_;
+}
+std::string Header::getText() const{
+    return text_;
+}
+int Header::getFontSize() const{
+    return fontSize_;
+}
