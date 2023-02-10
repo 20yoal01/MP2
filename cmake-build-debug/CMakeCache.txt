@@ -157,7 +157,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=untitled1
+CMAKE_PROJECT_NAME:STATIC=MP2
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/ranlib.exe
@@ -238,6 +238,15 @@ CMAKE_STRIP:FILEPATH=C:/Program Files/JetBrains/CLion 2022.3.2/bin/mingw/bin/str
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//Value Computed by CMake
+MP2_BINARY_DIR:STATIC=C:/Users/yousi/CLionProjects/MP2/cmake-build-debug
+
+//Value Computed by CMake
+MP2_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+MP2_SOURCE_DIR:STATIC=C:/Users/yousi/CLionProjects/MP2
 
 //Value Computed by CMake
 untitled1_BINARY_DIR:STATIC=C:/Users/yousi/CLionProjects/MP2/cmake-build-debug
