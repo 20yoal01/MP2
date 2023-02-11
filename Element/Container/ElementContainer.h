@@ -19,5 +19,4 @@ private:
     std::vector <T> elementList;
 };
 
-
 #endif //MP2_ELEMENTCONTAINER_H

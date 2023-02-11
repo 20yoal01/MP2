@@ -28,5 +28,4 @@ private:
     iter_type iterator;
 };
 
-
 #endif //MP2_ELEMENTITERATOR_H
