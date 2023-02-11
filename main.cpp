@@ -11,20 +11,18 @@
 int main(){
     ElementCreator* es = new ElementCreator();
 
-    std::vector <Element> elementList;
-    ElementContainer<Element> cont2;
+
+    ElementContainer<Element*> cont2;
     for(int i = 0; i < 3; i++){
         es->createElement(ET_Header);
         Element *e = es->getElement();
-        e->setText("sad");
-        cont2.Add(*e);
-        elementList.push_back(*e);
-        std::cout << &(elementList[i]) << std::endl;
+        e->setText("Hej " + std::to_string(i));
+        cont2.Add(e);
     }
 
-    ElementIterator<Element, ElementContainer<Element>> *it2 = cont2.CreateIterator();
+    ElementIterator<Element*, ElementContainer<Element*>> *it2 = cont2.CreateIterator();
     for (it2->First(); !it2->IsDone(); it2->Next()) {
-        std::cout << it2->Current()->getText() << std::endl;
+        std::cout << (*it2->Current())->getText() << std::endl;
     }
     return 0;
 };
