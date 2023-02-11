@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "MP2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MP2-Debug-803b139281d3f3b3dcdc.json",
+					"jsonFile" : "target-MP2-Debug-6d2f3c74d896df26164f.json",
 					"name" : "MP2",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/yousi/CLionProjects/MP2/cmake-build-debug",
-		"source" : "C:/Users/yousi/CLionProjects/MP2"
+		"build" : "C:/MP2/cmake-build-debug",
+		"source" : "C:/MP2"
 	},
 	"version" : 
 	{

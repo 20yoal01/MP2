@@ -13,7 +13,6 @@ private:
     std::string color;
     std::string text;
 
-
 public:
     virtual ~Element() {}
     virtual void setColor(std::string color);
@@ -21,5 +20,4 @@ public:
     virtual std::string getText() const;
     static Element* Create(ElementType type);
 };
-
 #endif //MP2_ELEMENT_H
