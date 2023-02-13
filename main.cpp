@@ -1,18 +1,17 @@
 
 #include <iostream>
+#include "Document/DocumentFacade.h"
 #include "Document/Document.h"
 
 int main(){
-    Document *d = new Document();
-    d->addElement(ET_Paragraph, "Lmao");
-    d->addElement(ET_Paragraph, "Lmao");
-    d->addElement(ET_Paragraph, "Lmao");
-    d->addElement(ET_Paragraph, "Lmao");
-    d->addElement(ET_Paragraph, "Lmao");
-    d->addElement(ET_Paragraph, "Lmao");
+    DocumentFacade* document = new DocumentFacade();
+    document->createThesisTemplate();
+    document->previewDocument();
+    document->reset();
+    document->addElement(ET_Header, "Welcome");
+    document->replaceText("Welcome", "Hejsan");
+    document->addElement(ET_Paragraph, "JAAAA");
+    document->previewDocument();
 
-    d->printContent();
-    d->replaceText("Lmao", "Kos omak");
-    d->printContent();
     return 0;
 };

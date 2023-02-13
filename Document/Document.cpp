@@ -36,3 +36,11 @@ void Document::printContent() {
         std::cout << (*elementIterator->Current())->getText()<< std::endl;
     }
 }
+
+const std::string &Document::getTitle() const {
+    return title;
+}
+
+void Document::setTitle(const std::string &title) {
+    Document::title = title;
+}
