@@ -6,7 +6,7 @@
 #define MP2_HEADERATTRIBUTES_H
 
 enum HeaderAttributes {
-    FONT, COLOR, TEXT
+    TEXT,   FONTSIZE,   BOLD,   ITALICS,    COLOR
 };
 
 #endif //MP2_HEADERATTRIBUTES_H

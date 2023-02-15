@@ -3,6 +3,9 @@
 //
 
 #include "DocumentFacade.h"
+#include "../Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.h"
+#include "../Element/ElementBuilder/HeaderBuilder/HeaderBuilder.h"
+
 DocumentFacade::DocumentFacade(){
     builder = new ConcreteDocumentBuilder();
     director = new DocumentDirector();
@@ -52,4 +55,19 @@ std::string DocumentFacade::getTitle() {
 void DocumentFacade::reset(){
     builder->reset();
     director->setBuilder(builder);
+}
+
+void DocumentFacade::renderElement(ElementType element, ElementBuilder* elementBuilder) {
+    Element* elementToAdd;
+    if(element == ET_Paragraph){
+        ParagraphBuilder* pBuilder = (ParagraphBuilder*) elementBuilder;
+        Paragraph* p = pBuilder->getParagraph();
+        elementToAdd = (Element*) p;
+    }
+    if(element == ET_Header){
+        HeaderBuilder* hBuilder = (HeaderBuilder*) elementBuilder;
+        Header* h = hBuilder->getHeader();
+        elementToAdd = (Element*) h;
+    }
+    builder->renderElement(elementToAdd);
 }

@@ -37,7 +37,10 @@ Document* ConcreteDocumentBuilder::getDocument() {
     return document;
 }
 
-
 ConcreteDocumentBuilder::~ConcreteDocumentBuilder(){
     delete document;
+}
+
+void ConcreteDocumentBuilder::renderElement(Element* element) {
+    document->renderElement(element);
 }

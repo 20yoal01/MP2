@@ -9,7 +9,7 @@ public:
     void setColor(std::string color) override;
     void setText(std::string text) override;
     void setBold(bool bold);
-    void setItalics();
+    void setItalics(bool italics);
     void setFontSize(int fontSize);
     std::string getText() const;
     int getFontSize() const;

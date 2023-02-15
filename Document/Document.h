@@ -24,6 +24,7 @@ private:
 public:
     Document();
     void replaceText(std::string previousText, std::string newText);
+    void renderElement(Element* element);
     void addElement(ElementType element, std::string text);
     void printContent();
     const std::string &getTitle() const;

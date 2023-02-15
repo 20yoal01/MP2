@@ -7,6 +7,7 @@
 
 #include "./Builder/ConcreteDocumentBuilder.h"
 #include "./Director/DocumentDirector.h"
+#include "../Element/ElementBuilder/ElementBuilder.h"
 #include <iostream>
 
 class DocumentFacade {
@@ -16,6 +17,7 @@ private:
 
 public:
     DocumentFacade();
+    void renderElement(ElementType element, ElementBuilder* elementBuilder);
     void setTitle(std::string text);
     void createMailTemplate();
     void createThesisTemplate();

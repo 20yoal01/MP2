@@ -3,11 +3,15 @@
 //
 
 #include "Document.h"
+#include "../Element/Paragraph/Paragraph.h"
 
 Document::Document() : elementCreator(new ElementCreator()), elements(){
     elementIterator = elements.CreateIterator();
 }
 
+void Document::renderElement(Element* element) {
+    elements.Add(element);
+}
 
 void Document::addElement(ElementType element, std::string text) {
     elementCreator->createElement(element);
@@ -34,6 +38,10 @@ void Document::replaceText(std::string previousText, std::string newText) {
 void Document::printContent() {
     for (elementIterator->First(); !elementIterator->IsDone(); elementIterator->Next()) {
         std::cout << (*elementIterator->Current())->getText()<< std::endl;
+        Paragraph* cast_paragraph = dynamic_cast<Paragraph*>(*elementIterator->Current());
+        if (cast_paragraph) {
+            std::cout << "FontSize: " << cast_paragraph->getFontSize() << std::endl;
+        }
     }
 }
 

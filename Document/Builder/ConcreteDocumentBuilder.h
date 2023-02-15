@@ -15,6 +15,7 @@ private:
 
 public:
     void reset();
+    void renderElement(Element* element);
     void addElement(ElementType element, std::string text);
     void setNewLine();
     void setTitle(std::string title);

@@ -9,9 +9,9 @@
 
 class Header : public Element{
 private:
-    int fontSize_;
-    std::string color_;
-    std::string text_;
+    int fontSize;
+    std::string color;
+    std::string text;
 
 public:
     Header(std::string text);

@@ -5,23 +5,26 @@
 #include "Header.h"
 
 Header::Header(std::string text){
-    text_ = text;
+    this->text = text;
 }
 
 void Header::setColor(std::string color){
-    color_ = color;
+    this->color = color;
 }
 
 void Header::setText(std::string text){
-    text_ = text;
+    this->text = text;
 }
 
+void Header::setFontSize(int fontSize) {
+    this->fontSize = fontSize;
+}
 std::string Header::getColor() const{
-    return color_;
+    return color;
 }
 std::string Header::getText() const{
-    return text_;
+    return text;
 }
 int Header::getFontSize() const{
-    return fontSize_;
+    return fontSize;
 }

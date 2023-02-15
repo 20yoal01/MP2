@@ -12,6 +12,15 @@ void Paragraph::setColor(std::string color){
 void Paragraph::setText(std::string text){
     text_ = text;
 }
+void Paragraph::setBold(bool bold) {
+    this->bold = bold;
+}
+void Paragraph::setItalics(bool italics) {
+    this->italics = italics;
+}
+void Paragraph::setFontSize(int fontSize) {
+    this->fontSize = fontSize;
+}
 std::string Paragraph::getText() const{
     return text_;
 }
