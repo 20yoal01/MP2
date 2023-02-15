@@ -7,11 +7,12 @@
 #include "Element/List/ListElement.h"
 #include "Element/List/ListItem.h"
 #include "Element/List/List.h"
+#include "Element/ElementBuilder/ListBuilder/ListBuilder.h"
 
 using namespace std;
 
 int main(){
-/*    DocumentFacade* document = new DocumentFacade();
+    DocumentFacade* document = new DocumentFacade();
     document->createThesisTemplate();
     document->previewDocument();
     document->reset();
@@ -22,34 +23,17 @@ int main(){
     builder->setFontSize(12);
     builder->setText("C++ suger");
     document->renderElement(ET_Paragraph, (ElementBuilder*) builder);
-    document->previewDocument();*/
-    ListElement *tree = new List;
-    ListElement *branch1 = new List;
-
-    ListElement *leaf_4 = new ListItem;
-    ListElement *leaf_5 = new ListItem;
-    leaf_4->setText("LMAO");
-    leaf_5->setText("LOL");
-    tree->Add(leaf_4);
-    tree->Add(leaf_5);
-
-    ListElement *leaf_1 = new ListItem;
-    ListElement *leaf_2 = new ListItem;
-    ListElement *leaf_3 = new ListItem;
-    leaf_1->setText("Hej 1");
-    leaf_2->setText("Hej 2");
-    leaf_3->setText("Hej 3");
-    branch1->Add(leaf_1);
-    branch1->Add(leaf_2);
-    ListElement *branch2 = new List;
-    branch2->Add(leaf_3);
-    tree->Add(branch1);
-    tree->Add(branch2);
-    std::cout << "Client: Now I've got a composite tree:\n";
-    std::cout << "RESULT: \n" << tree->getText();
-    std::cout << "\n\n";
-
-
-
+    document->addElement(ET_List, "Hej");
+    ListBuilder* listBuilder = new ListBuilder();
+    for(int i = 0; i < 3; i++){
+        listBuilder->addListItem(to_string(i));
+    }
+    ListElement* lElement = listBuilder->getList();
+    for(int i = 0; i < 3; i++){
+        listBuilder->addListItem(to_string(i));
+    }
+    listBuilder->addList(lElement);
+    document->renderElement(ET_List, (ElementBuilder*) listBuilder);
+    document->previewDocument();
     return 0;
 };

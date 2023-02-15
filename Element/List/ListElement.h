@@ -12,6 +12,7 @@ protected:
     ListElement *parent;
 
 public:
+    ListElement();
     virtual ~ListElement();
     void SetParent(ListElement *parent);
     ListElement *GetParent() const;

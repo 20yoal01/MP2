@@ -4,6 +4,8 @@
 
 #include "ListElement.h"
 
+ListElement::ListElement() : parent() {}
+
 ListElement::~ListElement() {}
 
 void ListElement::SetParent(ListElement *parent) {

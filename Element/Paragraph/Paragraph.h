@@ -18,11 +18,11 @@ public:
     std::string getColor() const;
 
 private:
-    std::string text_;
+    std::string text;
     int fontSize;
     bool bold;
     bool italics;
-    std::string color_;
+    std::string color;
 };
 
 #endif

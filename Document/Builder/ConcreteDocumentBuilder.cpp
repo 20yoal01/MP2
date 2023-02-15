@@ -30,7 +30,7 @@ void ConcreteDocumentBuilder::addElement(ElementType element, std::string text){
     document->addElement(element, text);
 }
 void ConcreteDocumentBuilder::setNewLine(){
-    document->addElement(ET_Paragraph, "\n");
+    document->addElement(ET_Paragraph, "");
 }
 
 Document* ConcreteDocumentBuilder::getDocument() {

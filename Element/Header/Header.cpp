@@ -4,7 +4,7 @@
 
 #include "Header.h"
 
-Header::Header(std::string text){
+Header::Header(std::string text) : color("black"), fontSize(0){
     this->text = text;
 }
 

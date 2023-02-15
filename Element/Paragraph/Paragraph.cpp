@@ -3,14 +3,14 @@
 //
 
 #include "Paragraph.h"
-Paragraph::Paragraph(std::string text) {
-    text_ = text;
+Paragraph::Paragraph(std::string text) : fontSize(0), bold(false), italics(false), color("black"){
+    this->text = text;
 }
 void Paragraph::setColor(std::string color){
-    color_ = color;
+    this->color = color;
 }
 void Paragraph::setText(std::string text){
-    text_ = text;
+    this->text = text;
 }
 void Paragraph::setBold(bool bold) {
     this->bold = bold;
@@ -22,17 +22,17 @@ void Paragraph::setFontSize(int fontSize) {
     this->fontSize = fontSize;
 }
 std::string Paragraph::getText() const{
-    return text_;
+    return this->text;
 }
 int Paragraph::getFontSize() const {
-    return fontSize;
+    return this->fontSize;
 }
 bool Paragraph::isBold() const {
-    return bold;
+    return this->bold;
 }
 bool Paragraph::isItalics() const {
-    return italics;
+    return this->italics;
 }
 std::string Paragraph::getColor() const {
-    return color_;
+    return this->color;
 }

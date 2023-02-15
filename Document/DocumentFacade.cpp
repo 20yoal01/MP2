@@ -5,6 +5,7 @@
 #include "DocumentFacade.h"
 #include "../Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.h"
 #include "../Element/ElementBuilder/HeaderBuilder/HeaderBuilder.h"
+#include "../Element/ElementBuilder/ListBuilder/ListBuilder.h"
 
 DocumentFacade::DocumentFacade(){
     builder = new ConcreteDocumentBuilder();
@@ -68,6 +69,11 @@ void DocumentFacade::renderElement(ElementType element, ElementBuilder* elementB
         HeaderBuilder* hBuilder = (HeaderBuilder*) elementBuilder;
         Header* h = hBuilder->getHeader();
         elementToAdd = (Element*) h;
+    }
+    if(element == ET_List){
+        ListBuilder* lBuilder = (ListBuilder*) elementBuilder;
+        ListElement* l = lBuilder->getList();
+        elementToAdd = (Element*) l;
     }
     builder->renderElement(elementToAdd);
 }

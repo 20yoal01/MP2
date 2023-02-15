@@ -20,9 +20,25 @@ bool List::IsComposite() const {
 
 std::string List::getText() const {
     std::string result;
-    std::string indent = "\t";  // Define the indentation string
-    for (const ListElement *c : children) {
-        result += "\n" + indent + c->getText();  // Add a new line and indent each child's text
+    std::string indentation = "";
+    ListElement* currentParent = this->GetParent();
+
+    while (currentParent != nullptr) {
+        indentation += "\t";
+        currentParent = currentParent->GetParent();
     }
-    return "Branch(" + result + "\n)";  // Add a new line before closing the branch
+    for (const ListElement* c : children) {
+        if (c == children.back()) {
+            result += indentation + c->getText();
+        } else {
+            result += indentation + c->getText() + "\n";
+        }
+    }
+
+    ListElement* topParent = this->GetParent();
+    if(topParent == nullptr){
+        return "List:\n" + result;
+    }
+
+    return "\tList:\n" + result;
 }

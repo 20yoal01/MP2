@@ -20,7 +20,7 @@ public:
     ~HeaderBuilder();
     void reset();
     Header* getHeader();
-    void setColor(std::string color) override;
+    void setColor(std::string color);
     void setText(std::string text);
     void setFontSize(int fontSize);
 };

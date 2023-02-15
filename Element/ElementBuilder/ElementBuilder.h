@@ -10,8 +10,6 @@
 class ElementBuilder {
 public:
     virtual ~ElementBuilder(){}
-    virtual void setColor(std::string color) = 0;
-    virtual void setText(std::string text) = 0;
 };
 
 

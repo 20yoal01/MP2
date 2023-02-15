@@ -21,8 +21,8 @@ public:
     ~ParagraphBuilder();
     void reset();
     Paragraph* getParagraph();
-    void setColor(std::string color) override;
-    void setText(std::string text) override;
+    void setColor(std::string color);
+    void setText(std::string text);
     void setBold(bool bold);
     void setItalics(bool italics);
     void setFontSize(int fontSize);
