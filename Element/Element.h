@@ -9,7 +9,7 @@
 #include "ElementType.h"
 
 class Element {
-private:
+protected:
     std::string color;
     std::string text;
 
@@ -18,6 +18,7 @@ public:
     virtual void setColor(std::string color);
     virtual void setText(std::string text);
     virtual std::string getText() const;
+    virtual std::string getColor() const;
     static Element* Create(ElementType type);
 };
 #endif //MP2_ELEMENT_H

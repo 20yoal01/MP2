@@ -3,21 +3,26 @@
 //
 
 #include "List.h"
-List::List(){
 
+void List::Add(ListElement *listElement) {
+    this->children.push_back(listElement);
+    listElement->SetParent(this);
 }
-List::List(std::string text) {
-    text_ = text;
+
+void List::Remove(ListElement *listElement) {
+    this->children.remove(listElement);
+    listElement->SetParent(nullptr);
 }
-void List::setOrdered(bool ordered){
-    ordered_ = ordered;
+
+bool List::IsComposite() const {
+    return true;
 }
-void List::setText(std::string text){
-    text_ = text;
-}
+
 std::string List::getText() const {
-    return text_;
-}
-bool List::isOrdered() const {
-    return ordered_;
+    std::string result;
+    std::string indent = "\t";  // Define the indentation string
+    for (const ListElement *c : children) {
+        result += "\n" + indent + c->getText();  // Add a new line and indent each child's text
+    }
+    return "Branch(" + result + "\n)";  // Add a new line before closing the branch
 }

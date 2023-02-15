@@ -10,7 +10,7 @@
 
 Element* Element::Create(ElementType type) {
     if (type == ET_List)
-        return new List("");
+        return new List();
     else if (type == ET_Paragraph)
         return new Paragraph("");
     else if (type == ET_Header)
@@ -23,6 +23,10 @@ void Element::setColor(std::string color){
 }
 void Element::setText(std::string text){
     text = text;
+}
+
+std::string Element::getColor() const {
+    return this->color;
 }
 
 std::string Element::getText() const{

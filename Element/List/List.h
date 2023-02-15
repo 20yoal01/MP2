@@ -6,20 +6,18 @@
 #define MP2_LIST_H
 
 #include <iostream>
-#include "../Element.h"
+#include <list>
+#include "./ListElement.h"
 
-class List : public Element{
-private:
-    std::string text_;
-    bool ordered_;
+class List : public ListElement{
+protected:
+    std::list<ListElement *> children;
 
 public:
-    List();
-    List(std::string text);
-    void setOrdered(bool ordered);
-    void setText(std::string text);
-    std::string getText() const;
-    bool isOrdered() const;
+    void Add(ListElement* listElement) override;
+    void Remove(ListElement* listElement) override;
+    bool IsComposite() const override;
+    std::string getText() const override;
 };
 
 

@@ -61,17 +61,23 @@ build CMakeFiles/MP2.dir/Element/Paragraph/Paragraph.cpp.obj: CXX_COMPILER__MP2_
   OBJECT_DIR = CMakeFiles\MP2.dir
   OBJECT_FILE_DIR = CMakeFiles\MP2.dir\Element\Paragraph
 
+build CMakeFiles/MP2.dir/Element/Header/Header.cpp.obj: CXX_COMPILER__MP2_Debug C$:/Users/yousi/CLionProjects/MP2/Element/Header/Header.cpp || cmake_object_order_depends_target_MP2
+  DEP_FILE = CMakeFiles\MP2.dir\Element\Header\Header.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\MP2.dir
+  OBJECT_FILE_DIR = CMakeFiles\MP2.dir\Element\Header
+
+build CMakeFiles/MP2.dir/Element/Table/Table.cpp.obj: CXX_COMPILER__MP2_Debug C$:/Users/yousi/CLionProjects/MP2/Element/Table/Table.cpp || cmake_object_order_depends_target_MP2
+  DEP_FILE = CMakeFiles\MP2.dir\Element\Table\Table.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\MP2.dir
+  OBJECT_FILE_DIR = CMakeFiles\MP2.dir\Element\Table
+
 build CMakeFiles/MP2.dir/Element/Element.cpp.obj: CXX_COMPILER__MP2_Debug C$:/Users/yousi/CLionProjects/MP2/Element/Element.cpp || cmake_object_order_depends_target_MP2
   DEP_FILE = CMakeFiles\MP2.dir\Element\Element.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\MP2.dir
   OBJECT_FILE_DIR = CMakeFiles\MP2.dir\Element
-
-build CMakeFiles/MP2.dir/Element/Creator/ElementCreator.cpp.obj: CXX_COMPILER__MP2_Debug C$:/Users/yousi/CLionProjects/MP2/Element/Creator/ElementCreator.cpp || cmake_object_order_depends_target_MP2
-  DEP_FILE = CMakeFiles\MP2.dir\Element\Creator\ElementCreator.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\MP2.dir
-  OBJECT_FILE_DIR = CMakeFiles\MP2.dir\Element\Creator
 
 build CMakeFiles/MP2.dir/Element/List/List.cpp.obj: CXX_COMPILER__MP2_Debug C$:/Users/yousi/CLionProjects/MP2/Element/List/List.cpp || cmake_object_order_depends_target_MP2
   DEP_FILE = CMakeFiles\MP2.dir\Element\List\List.cpp.obj.d
@@ -79,59 +85,17 @@ build CMakeFiles/MP2.dir/Element/List/List.cpp.obj: CXX_COMPILER__MP2_Debug C$:/
   OBJECT_DIR = CMakeFiles\MP2.dir
   OBJECT_FILE_DIR = CMakeFiles\MP2.dir\Element\List
 
-build CMakeFiles/MP2.dir/Element/Header/Header.cpp.obj: CXX_COMPILER__MP2_Debug C$:/Users/yousi/CLionProjects/MP2/Element/Header/Header.cpp || cmake_object_order_depends_target_MP2
-  DEP_FILE = CMakeFiles\MP2.dir\Element\Header\Header.cpp.obj.d
+build CMakeFiles/MP2.dir/Element/List/ListElement.cpp.obj: CXX_COMPILER__MP2_Debug C$:/Users/yousi/CLionProjects/MP2/Element/List/ListElement.cpp || cmake_object_order_depends_target_MP2
+  DEP_FILE = CMakeFiles\MP2.dir\Element\List\ListElement.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\MP2.dir
-  OBJECT_FILE_DIR = CMakeFiles\MP2.dir\Element\Header
+  OBJECT_FILE_DIR = CMakeFiles\MP2.dir\Element\List
 
-build CMakeFiles/MP2.dir/Element/Container/ElementContainer.cpp.obj: CXX_COMPILER__MP2_Debug C$:/Users/yousi/CLionProjects/MP2/Element/Container/ElementContainer.cpp || cmake_object_order_depends_target_MP2
-  DEP_FILE = CMakeFiles\MP2.dir\Element\Container\ElementContainer.cpp.obj.d
+build CMakeFiles/MP2.dir/Element/List/ListItem.cpp.obj: CXX_COMPILER__MP2_Debug C$:/Users/yousi/CLionProjects/MP2/Element/List/ListItem.cpp || cmake_object_order_depends_target_MP2
+  DEP_FILE = CMakeFiles\MP2.dir\Element\List\ListItem.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\MP2.dir
-  OBJECT_FILE_DIR = CMakeFiles\MP2.dir\Element\Container
-
-build CMakeFiles/MP2.dir/Element/Iterator/ElementIterator.cpp.obj: CXX_COMPILER__MP2_Debug C$:/Users/yousi/CLionProjects/MP2/Element/Iterator/ElementIterator.cpp || cmake_object_order_depends_target_MP2
-  DEP_FILE = CMakeFiles\MP2.dir\Element\Iterator\ElementIterator.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\MP2.dir
-  OBJECT_FILE_DIR = CMakeFiles\MP2.dir\Element\Iterator
-
-build CMakeFiles/MP2.dir/Document/Document.cpp.obj: CXX_COMPILER__MP2_Debug C$:/Users/yousi/CLionProjects/MP2/Document/Document.cpp || cmake_object_order_depends_target_MP2
-  DEP_FILE = CMakeFiles\MP2.dir\Document\Document.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\MP2.dir
-  OBJECT_FILE_DIR = CMakeFiles\MP2.dir\Document
-
-build CMakeFiles/MP2.dir/Document/Builder/ConcreteDocumentBuilder.cpp.obj: CXX_COMPILER__MP2_Debug C$:/Users/yousi/CLionProjects/MP2/Document/Builder/ConcreteDocumentBuilder.cpp || cmake_object_order_depends_target_MP2
-  DEP_FILE = CMakeFiles\MP2.dir\Document\Builder\ConcreteDocumentBuilder.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\MP2.dir
-  OBJECT_FILE_DIR = CMakeFiles\MP2.dir\Document\Builder
-
-build CMakeFiles/MP2.dir/Document/Director/DocumentDirector.cpp.obj: CXX_COMPILER__MP2_Debug C$:/Users/yousi/CLionProjects/MP2/Document/Director/DocumentDirector.cpp || cmake_object_order_depends_target_MP2
-  DEP_FILE = CMakeFiles\MP2.dir\Document\Director\DocumentDirector.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\MP2.dir
-  OBJECT_FILE_DIR = CMakeFiles\MP2.dir\Document\Director
-
-build CMakeFiles/MP2.dir/Document/DocumentFacade.cpp.obj: CXX_COMPILER__MP2_Debug C$:/Users/yousi/CLionProjects/MP2/Document/DocumentFacade.cpp || cmake_object_order_depends_target_MP2
-  DEP_FILE = CMakeFiles\MP2.dir\Document\DocumentFacade.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\MP2.dir
-  OBJECT_FILE_DIR = CMakeFiles\MP2.dir\Document
-
-build CMakeFiles/MP2.dir/Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.cpp.obj: CXX_COMPILER__MP2_Debug C$:/Users/yousi/CLionProjects/MP2/Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.cpp || cmake_object_order_depends_target_MP2
-  DEP_FILE = CMakeFiles\MP2.dir\Element\ElementBuilder\ParagraphBuilder\ParagraphBuilder.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\MP2.dir
-  OBJECT_FILE_DIR = CMakeFiles\MP2.dir\Element\ElementBuilder\ParagraphBuilder
-
-build CMakeFiles/MP2.dir/Element/ElementBuilder/HeaderBuilder/HeaderBuilder.cpp.obj: CXX_COMPILER__MP2_Debug C$:/Users/yousi/CLionProjects/MP2/Element/ElementBuilder/HeaderBuilder/HeaderBuilder.cpp || cmake_object_order_depends_target_MP2
-  DEP_FILE = CMakeFiles\MP2.dir\Element\ElementBuilder\HeaderBuilder\HeaderBuilder.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\MP2.dir
-  OBJECT_FILE_DIR = CMakeFiles\MP2.dir\Element\ElementBuilder\HeaderBuilder
+  OBJECT_FILE_DIR = CMakeFiles\MP2.dir\Element\List
 
 
 # =============================================================================
@@ -141,7 +105,7 @@ build CMakeFiles/MP2.dir/Element/ElementBuilder/HeaderBuilder/HeaderBuilder.cpp.
 #############################################
 # Link the executable MP2.exe
 
-build MP2.exe: CXX_EXECUTABLE_LINKER__MP2_Debug CMakeFiles/MP2.dir/main.cpp.obj CMakeFiles/MP2.dir/Element/Paragraph/Paragraph.cpp.obj CMakeFiles/MP2.dir/Element/Element.cpp.obj CMakeFiles/MP2.dir/Element/Creator/ElementCreator.cpp.obj CMakeFiles/MP2.dir/Element/List/List.cpp.obj CMakeFiles/MP2.dir/Element/Header/Header.cpp.obj CMakeFiles/MP2.dir/Element/Container/ElementContainer.cpp.obj CMakeFiles/MP2.dir/Element/Iterator/ElementIterator.cpp.obj CMakeFiles/MP2.dir/Document/Document.cpp.obj CMakeFiles/MP2.dir/Document/Builder/ConcreteDocumentBuilder.cpp.obj CMakeFiles/MP2.dir/Document/Director/DocumentDirector.cpp.obj CMakeFiles/MP2.dir/Document/DocumentFacade.cpp.obj CMakeFiles/MP2.dir/Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.cpp.obj CMakeFiles/MP2.dir/Element/ElementBuilder/HeaderBuilder/HeaderBuilder.cpp.obj
+build MP2.exe: CXX_EXECUTABLE_LINKER__MP2_Debug CMakeFiles/MP2.dir/main.cpp.obj CMakeFiles/MP2.dir/Element/Paragraph/Paragraph.cpp.obj CMakeFiles/MP2.dir/Element/Header/Header.cpp.obj CMakeFiles/MP2.dir/Element/Table/Table.cpp.obj CMakeFiles/MP2.dir/Element/Element.cpp.obj CMakeFiles/MP2.dir/Element/List/List.cpp.obj CMakeFiles/MP2.dir/Element/List/ListElement.cpp.obj CMakeFiles/MP2.dir/Element/List/ListItem.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\MP2.dir
