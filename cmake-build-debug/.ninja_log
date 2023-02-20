@@ -1,5 +1,5 @@
 # ninja log v5
-2	486	6986233162215142	build.ninja	972fa4746103d374
+2	486	6986236647650093	build.ninja	972fa4746103d374
 17	300	6976566636411335	untitled1.exe	a6ca92baf6704eb2
 12	1141	6986229279261747	CMakeFiles/MP2.dir/Element/Paragraph/Paragraph.cpp.obj	73230227fc2669bf
 2144	2961	6986229447971790	CMakeFiles/MP2.dir/Element/Creator/ElementCreator.cpp.obj	83f7f9b0f5c48281
@@ -18,3 +18,26 @@
 2962	3808	6986229456516761	CMakeFiles/MP2.dir/Document/DocumentFacade.cpp.obj	c12b3233fc5fb08
 3064	3946	6986229457796751	CMakeFiles/MP2.dir/Element/ElementBuilder/ListBuilder/ListBuilder.cpp.obj	da409f5b98c9a492
 3843	4571	6986229463306765	CMakeFiles/MP2.dir/Element/Visitor/HTMLVisitor/HTMLVisitor.cpp.obj	bfb334ff27b77149
+9	873	6986236702500077	CMakeFiles/MP2.dir/Element/Visitor/MarkDownVisitor/MarkDownVisitor.cpp.obj	95323d5c6d92a56f
+14	893	6986236702715068	CMakeFiles/MP2.dir/Element/Visitor/DefaultVisitor/DefaultVisitor.cpp.obj	30718d45de4db1e3
+893	1132	6986236705135057	MP2.exe	3ae9474baca12baa
+16	884	6986242993265490	CMakeFiles/MP2.dir/Document/Director/DocumentDirector.cpp.obj	2c0caa6ce293077d
+20	898	6986242993320488	CMakeFiles/MP2.dir/Document/DocumentFacade.cpp.obj	c12b3233fc5fb08
+8	967	6986242993830495	CMakeFiles/MP2.dir/main.cpp.obj	3ef46cc99d08f4d0
+898	1575	6986243000065497	CMakeFiles/MP2.dir/Document/Builder/ConcreteDocumentBuilder.cpp.obj	654255b232469a0b
+884	1627	6986243000810492	CMakeFiles/MP2.dir/Document/Document.cpp.obj	96f8af36ff784720
+1628	1867	6986243003205479	MP2.exe	3ae9474baca12baa
+6	961	6986243363187767	CMakeFiles/MP2.dir/Document/Document.cpp.obj	96f8af36ff784720
+962	1330	6986243367157766	MP2.exe	3ae9474baca12baa
+7	1576	6986243538832767	CMakeFiles/MP2.dir/Document/Document.cpp.obj	96f8af36ff784720
+1576	1833	6986243541822754	MP2.exe	3ae9474baca12baa
+11	1122	6986244533413650	CMakeFiles/MP2.dir/Document/DocumentFacade.cpp.obj	c12b3233fc5fb08
+15	1161	6986244533838644	CMakeFiles/MP2.dir/Document/Builder/ConcreteDocumentBuilder.cpp.obj	654255b232469a0b
+6	1179	6986244534033641	CMakeFiles/MP2.dir/main.cpp.obj	3ef46cc99d08f4d0
+1122	1743	6986244539523658	CMakeFiles/MP2.dir/Document/Director/DocumentDirector.cpp.obj	2c0caa6ce293077d
+1161	1978	6986244541763661	CMakeFiles/MP2.dir/Document/Document.cpp.obj	96f8af36ff784720
+1978	2368	6986244545648641	MP2.exe	3ae9474baca12baa
+6	658	6986245456403138	CMakeFiles/MP2.dir/main.cpp.obj	3ef46cc99d08f4d0
+659	907	6986245458863132	MP2.exe	3ae9474baca12baa
+6	2165	6986245650693458	CMakeFiles/MP2.dir/main.cpp.obj	3ef46cc99d08f4d0
+2166	2584	6986245655018465	MP2.exe	3ae9474baca12baa

@@ -8,13 +8,29 @@
 #include "../Element/List/List.h"
 #include "../Element/List/ListItem.h"
 #include "../Element/Visitor/HTMLVisitor/HTMLVisitor.h"
+#include "../Element/Visitor/DefaultVisitor/DefaultVisitor.h"
+#include "../Element/Visitor/MarkDownVisitor/MarkDownVisitor.h"
 
 Document::Document() : elementCreator(new ElementCreator()), elements(){
+    visitor = new DefaultVisitor;
     elementIterator = elements.CreateIterator();
 }
 
 void Document::renderElement(Element* element) {
     elements.Add(element);
+}
+
+void Document::setExtension(VisitorType extension) {
+    switch (extension) {
+        case DEFAULT:
+            visitor = new DefaultVisitor;
+            break;
+        case HTML:
+            visitor = new HTMLVisitor;
+            break;
+        case MARKDOWN:
+            visitor = new MarkDownVisitor;
+    }
 }
 
 void Document::addElement(ElementType element, std::string text) {
@@ -52,7 +68,6 @@ void Document::replaceText(std::string previousText, std::string newText) {
 }
 
 void Document::printContent() {
-    HTMLVisitor *visitor = new HTMLVisitor;
     for (elementIterator->First(); !elementIterator->IsDone(); elementIterator->Next()) {
         std::cout << (*elementIterator->Current())->Accept(visitor)<< std::endl;
     }

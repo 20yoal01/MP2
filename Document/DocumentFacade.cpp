@@ -56,6 +56,10 @@ void DocumentFacade::reset(){
     director->setBuilder(builder);
 }
 
+void DocumentFacade::setExtension(VisitorType extension) {
+    builder->getDocument()->setExtension(extension);
+}
+
 void DocumentFacade::renderElement(ElementType element, ElementBuilder* elementBuilder) {
     Element* elementToAdd = elementBuilder->getElement();
     builder->renderElement(elementToAdd);

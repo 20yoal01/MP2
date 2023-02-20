@@ -17,6 +17,7 @@ private:
 
 public:
     DocumentFacade();
+    void setExtension(VisitorType extension);
     void renderElement(ElementType element, ElementBuilder* elementBuilder);
     void setTitle(std::string text);
     void createMailTemplate();

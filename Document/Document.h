@@ -12,6 +12,7 @@
 #include "../Element/Iterator/ElementIterator.h"
 #include "../Element/Container/ElementContainer.cpp"
 #include "../Element/Iterator/ElementIterator.cpp"
+#include "../Element/Visitor/VisitorType.h"
 
 class Document {
 
@@ -20,6 +21,7 @@ private:
     ElementCreator* elementCreator;
     ElementIterator<Element*, ElementContainer<Element*>> *elementIterator;
     std::string title;
+    ElementVisitor *visitor;
 
 public:
     Document();
@@ -29,6 +31,7 @@ public:
     void printContent();
     const std::string &getTitle() const;
     void setTitle(const std::string &title);
+    void setExtension(VisitorType extension);
 };
 
 

@@ -34,6 +34,9 @@ int main(){
     }
     listBuilder->addList(lElement);
     document->renderElement(ET_List, listBuilder);
+    document->setExtension(HTML);
+    document->previewDocument();
+    document->setExtension(MARKDOWN);
     document->previewDocument();
     return 0;
 };
