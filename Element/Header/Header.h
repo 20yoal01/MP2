@@ -15,6 +15,7 @@ private:
 
 public:
     Header(std::string text);
+    void Accept(ElementVisitor *visitor) const;
     void setColor(std::string color) override;
     void setText(std::string text);
     void setFontSize(int fontSize);

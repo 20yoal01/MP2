@@ -26,7 +26,7 @@ void ListBuilder::addList(ListElement *list) {
     this->list->Add(list);
 }
 
-ListElement *ListBuilder::getList() {
+Element *ListBuilder::getElement(){
     ListElement* result= this->list;
     this->reset();
     return result;

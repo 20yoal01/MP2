@@ -20,7 +20,7 @@ public:
     ParagraphBuilder();
     ~ParagraphBuilder();
     void reset();
-    Paragraph* getParagraph();
+    Element* getElement() override;
     void setColor(std::string color);
     void setText(std::string text);
     void setBold(bool bold);

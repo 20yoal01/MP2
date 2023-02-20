@@ -4,8 +4,6 @@
 
 #include "DocumentFacade.h"
 #include "../Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.h"
-#include "../Element/ElementBuilder/HeaderBuilder/HeaderBuilder.h"
-#include "../Element/ElementBuilder/ListBuilder/ListBuilder.h"
 
 DocumentFacade::DocumentFacade(){
     builder = new ConcreteDocumentBuilder();
@@ -59,21 +57,6 @@ void DocumentFacade::reset(){
 }
 
 void DocumentFacade::renderElement(ElementType element, ElementBuilder* elementBuilder) {
-    Element* elementToAdd;
-    if(element == ET_Paragraph){
-        ParagraphBuilder* pBuilder = (ParagraphBuilder*) elementBuilder;
-        Paragraph* p = pBuilder->getParagraph();
-        elementToAdd = (Element*) p;
-    }
-    if(element == ET_Header){
-        HeaderBuilder* hBuilder = (HeaderBuilder*) elementBuilder;
-        Header* h = hBuilder->getHeader();
-        elementToAdd = (Element*) h;
-    }
-    if(element == ET_List){
-        ListBuilder* lBuilder = (ListBuilder*) elementBuilder;
-        ListElement* l = lBuilder->getList();
-        elementToAdd = (Element*) l;
-    }
+    Element* elementToAdd = elementBuilder->getElement();
     builder->renderElement(elementToAdd);
 }

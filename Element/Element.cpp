@@ -6,7 +6,6 @@
 #include "./List/List.h"
 #include "./Header/Header.h"
 #include "./Paragraph/Paragraph.h"
-#include "./Table/Table.h"
 
 Element* Element::Create(ElementType type) {
     if (type == ET_List)

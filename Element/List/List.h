@@ -18,6 +18,7 @@ public:
     void Remove(ListElement* listElement) override;
     bool IsComposite() const override;
     std::string getText() const override;
+    void Accept(ElementVisitor *visitor) const;
 };
 
 

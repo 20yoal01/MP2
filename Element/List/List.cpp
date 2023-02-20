@@ -18,6 +18,10 @@ bool List::IsComposite() const {
     return true;
 }
 
+void List::Accept(ElementVisitor *visitor) const {
+    visitor->convertList(this);
+}
+
 std::string List::getText() const {
     std::string result;
     std::string indentation = "";

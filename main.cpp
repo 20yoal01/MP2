@@ -22,18 +22,18 @@ int main(){
     ParagraphBuilder* builder = new ParagraphBuilder();
     builder->setFontSize(12);
     builder->setText("C++ suger");
-    document->renderElement(ET_Paragraph, (ElementBuilder*) builder);
+    document->renderElement(ET_Paragraph, builder);
     document->addElement(ET_List, "Hej");
     ListBuilder* listBuilder = new ListBuilder();
     for(int i = 0; i < 3; i++){
         listBuilder->addListItem(to_string(i));
     }
-    ListElement* lElement = listBuilder->getList();
+    ListElement* lElement = (ListElement*) listBuilder->getElement();
     for(int i = 0; i < 3; i++){
         listBuilder->addListItem(to_string(i));
     }
     listBuilder->addList(lElement);
-    document->renderElement(ET_List, (ElementBuilder*) listBuilder);
+    document->renderElement(ET_List, listBuilder);
     document->previewDocument();
     return 0;
 };

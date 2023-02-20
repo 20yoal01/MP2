@@ -18,7 +18,7 @@ void HeaderBuilder::reset() {
     elementCreator->createElement(ET_Paragraph);
     header = (Header *) (elementCreator->getElement());
 }
-Header *HeaderBuilder::getHeader() {
+Element *HeaderBuilder::getElement(){
     Header* result= this->header;
     this->reset();
     return result;

@@ -16,7 +16,7 @@ void ParagraphBuilder::reset() {
     paragraph = (Paragraph *) (elementCreator->getElement());
 }
 
-Paragraph *ParagraphBuilder::getParagraph() {
+Element *ParagraphBuilder::getElement(){
     Paragraph* result= this->paragraph;
     this->reset();
     return result;

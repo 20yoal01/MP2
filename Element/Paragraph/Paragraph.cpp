@@ -36,3 +36,7 @@ bool Paragraph::isItalics() const {
 std::string Paragraph::getColor() const {
     return this->color;
 }
+
+void Paragraph::Accept(ElementVisitor *visitor) const {
+    visitor->convertParagraph(this);
+}

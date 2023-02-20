@@ -11,7 +11,6 @@
 #include "../ElementBuilder.h"
 #include "../../Creator/ElementCreator.h"
 
-
 class ListBuilder : public ElementBuilder{
 
 private:
@@ -22,7 +21,7 @@ public:
     ListBuilder();
     ~ListBuilder();
     void reset();
-    ListElement* getList();
+    Element* getElement() override;
     void addList(ListElement* list);
     void addListItem(std::string text);
 };

@@ -28,3 +28,6 @@ std::string Header::getText() const{
 int Header::getFontSize() const{
     return fontSize;
 }
+void Header::Accept(ElementVisitor *visitor) const {
+    visitor->convertHeader(this);
+}

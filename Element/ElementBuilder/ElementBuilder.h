@@ -6,10 +6,12 @@
 #define MP2_ELEMENTBUILDER_H
 
 #include <iostream>
+#include "../Element.h"
 
 class ElementBuilder {
 public:
     virtual ~ElementBuilder(){}
+    virtual Element* getElement() = 0;
 };
 
 

@@ -23,5 +23,3 @@ void ListElement::Remove(ListElement *component) {}
 bool ListElement::IsComposite() const {
     return false;
 }
-
-
