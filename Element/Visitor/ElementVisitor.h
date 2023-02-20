@@ -6,6 +6,7 @@
 #define MP2_ELEMENTVISITOR_H
 
 
+
 #include "../Element.h"
 
 class Paragraph;
@@ -15,10 +16,10 @@ class ListItem;
 
 class ElementVisitor {
 public:
-    virtual void convertParagraph(const Paragraph* element) const = 0;
-    virtual void convertHeader(const Header* element) const = 0;
-    virtual void convertList(const List* element) const = 0;
-    virtual void convertListItem(const ListItem* element) const = 0;
+    virtual std::string convertParagraph(const Paragraph* element) const = 0;
+    virtual std::string convertHeader(const Header* element) const = 0;
+    virtual std::string convertList(std::string text) const = 0;
+    virtual std::string convertListItem(const ListItem* element) const = 0;
 };
 
 

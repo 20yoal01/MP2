@@ -20,6 +20,6 @@ std::string ListItem::getColor() const {
     return this->color;
 }
 
-void ListItem::Accept(ElementVisitor *visitor) const {
-    visitor->convertListItem(this);
+std::string ListItem::Accept(ElementVisitor *visitor) const {
+    return visitor->convertListItem(this);
 }

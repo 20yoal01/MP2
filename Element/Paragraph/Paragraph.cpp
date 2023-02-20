@@ -37,6 +37,6 @@ std::string Paragraph::getColor() const {
     return this->color;
 }
 
-void Paragraph::Accept(ElementVisitor *visitor) const {
-    visitor->convertParagraph(this);
+std::string Paragraph::Accept(ElementVisitor *visitor) const {
+    return visitor->convertParagraph(this);
 }

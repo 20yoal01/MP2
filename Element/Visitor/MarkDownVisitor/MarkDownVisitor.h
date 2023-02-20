@@ -1,9 +1,9 @@
 //
-// Created by yousi on 2023-02-20.
+// Created by Gorillaspluch on 2023-02-20.
 //
 
-#ifndef MP2_HTMLVISITOR_H
-#define MP2_HTMLVISITOR_H
+#ifndef MP2_MARKDOWNVISITOR_H
+#define MP2_MARKDOWNVISITOR_H
 
 #include "../../Paragraph/Paragraph.h"
 #include "../../Header/Header.h"
@@ -11,7 +11,7 @@
 #include "../../List/ListItem.h"
 #include "../ElementVisitor.h"
 
-class HTMLVisitor : public ElementVisitor{
+class MarkDownVisitor : public ElementVisitor{
     std::string convertParagraph(const Paragraph* element) const override;
     std::string convertHeader(const Header* element) const override;
     std::string convertList(std::string text) const override;
@@ -19,4 +19,4 @@ class HTMLVisitor : public ElementVisitor{
 };
 
 
-#endif //MP2_HTMLVISITOR_H
+#endif //MP2_MARKDOWNVISITOR_H

@@ -14,7 +14,7 @@ public:
     void setColor(std::string color) override;
     std::string getText() const override;
     std::string getColor() const override;
-    void Accept(ElementVisitor *visitor) const;
+    std::string Accept(ElementVisitor *visitor) const;
 };
 
 

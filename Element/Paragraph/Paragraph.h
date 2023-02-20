@@ -6,7 +6,7 @@
 class Paragraph : public Element {
 public:
     Paragraph(std::string text);
-    void Accept(ElementVisitor *visitor) const override;
+    std::string Accept(ElementVisitor *visitor) const override;
     void setColor(std::string color) override;
     void setText(std::string text) override;
     void setBold(bool bold);

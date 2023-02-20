@@ -7,6 +7,7 @@
 #include "../Element/List/ListElement.h"
 #include "../Element/List/List.h"
 #include "../Element/List/ListItem.h"
+#include "../Element/Visitor/HTMLVisitor/HTMLVisitor.h"
 
 Document::Document() : elementCreator(new ElementCreator()), elements(){
     elementIterator = elements.CreateIterator();
@@ -51,8 +52,9 @@ void Document::replaceText(std::string previousText, std::string newText) {
 }
 
 void Document::printContent() {
+    HTMLVisitor *visitor = new HTMLVisitor;
     for (elementIterator->First(); !elementIterator->IsDone(); elementIterator->Next()) {
-        std::cout << (*elementIterator->Current())->getText()<< std::endl;
+        std::cout << (*elementIterator->Current())->Accept(visitor)<< std::endl;
     }
 }
 

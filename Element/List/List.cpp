@@ -18,9 +18,20 @@ bool List::IsComposite() const {
     return true;
 }
 
-void List::Accept(ElementVisitor *visitor) const {
-    visitor->convertList(this);
+std::string List::Accept(ElementVisitor *visitor) const {
+    //return visitor->convertList(this);
+    std::string result;
+    for(const ListElement *c : children) {
+        if (c == children.back()) {
+            result += c->Accept(visitor);
+        } else {
+            result += c->Accept(visitor) + "\n";
+        }
+    }
+    result = visitor->convertList(result);
+    return result;
 }
+
 
 std::string List::getText() const {
     std::string result;
