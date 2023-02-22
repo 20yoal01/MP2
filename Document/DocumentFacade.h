@@ -16,7 +16,6 @@ private:
     ConcreteDocumentBuilder* documentBuilder;
 
 public:
-    ElementBuilder* elementBuilder;
     DocumentFacade();
     std::string exportToFile(std::string fileName) const;
     void setExtension(ExtensionType extension);
@@ -31,8 +30,16 @@ public:
     void addHeader(std::string text);
     void replaceText(std::string previousText, std::string newText);
     void previewDocument();
-    std::string getTitle();
+    ExtensionType getExtension() const;
+    std::string getTitle() const;
     void reset();
+
+    friend class SetExtensionCommand;
+    friend class RenderElementCommand;
+    friend class SetTitleCommand;
+    friend class AddParagraphCommand;
+    friend class AddHeaderCommand;
+    friend class ReplaceTextCommand;
 };
 
 

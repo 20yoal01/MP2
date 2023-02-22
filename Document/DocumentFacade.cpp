@@ -46,10 +46,6 @@ void DocumentFacade::previewDocument() {
     documentBuilder->getDocument()->printContent();
 }
 
-std::string DocumentFacade::getTitle() {
-    documentBuilder->getDocument()->getTitle();
-}
-
 void DocumentFacade::reset(){
     documentBuilder->reset();
     director->setBuilder(documentBuilder);
@@ -81,4 +77,12 @@ void DocumentFacade::addParagraph(std::string text) {
 void DocumentFacade::renderElement(ElementBuilder* elementBuilder) {
     Element* elementToAdd = elementBuilder->getElement();
     documentBuilder->renderElement(elementToAdd);
+}
+
+std::string DocumentFacade::getTitle() const {
+    return documentBuilder->getDocument()->getTitle();
+}
+
+ExtensionType DocumentFacade::getExtension() const {
+    return documentBuilder->getDocument()->getExtension();
 }
