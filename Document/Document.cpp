@@ -20,7 +20,7 @@ void Document::renderElement(Element* element) {
     elements.Add(element);
 }
 
-void Document::setExtension(VisitorType extension) {
+void Document::setExtension(ExtensionType extension) {
     switch (extension) {
         case DEFAULT:
             visitor = new DefaultVisitor;

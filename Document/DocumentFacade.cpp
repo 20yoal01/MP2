@@ -56,7 +56,7 @@ void DocumentFacade::reset(){
     director->setBuilder(builder);
 }
 
-void DocumentFacade::setExtension(VisitorType extension) {
+void DocumentFacade::setExtension(ExtensionType extension) {
     builder->getDocument()->setExtension(extension);
 }
 
