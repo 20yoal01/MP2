@@ -6,7 +6,7 @@
 #define MP2_ELEMENTTYPE_H
 
 enum ElementType {
-    ET_Paragraph,    ET_Header,    ET_List,    ET_Table
+    ET_Paragraph,    ET_Header,    ET_List
 };
 
 #endif //MP2_ELEMENTTYPE_H

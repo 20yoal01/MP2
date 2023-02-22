@@ -16,10 +16,6 @@ Document::Document() : elementCreator(new ElementCreator()), elements(){
     elementIterator = elements.CreateIterator();
 }
 
-void Document::renderElement(Element* element) {
-    elements.Add(element);
-}
-
 void Document::setExtension(ExtensionType extension) {
     this->extension = extension;
     switch (extension) {
@@ -38,23 +34,15 @@ ExtensionType Document::getExtension() const {
     return extension;
 }
 
-void Document::addElement(ElementType element, std::string text) {
-    if(element == ET_List){
-        elementCreator->createElement(element);
-        Element *list = elementCreator->getElement();
-        ListElement *tempList = (List*) list;
-        ListElement *item = new ListItem;
-        item->setText(text);
-        tempList->Add(item);
-        elements.Add(tempList);
-    }
-    else{
-        elementCreator->createElement(element);
-        Element *e = elementCreator->getElement();
-        e->setText(text);
-        elements.Add(e);
-    }
+void Document::renderElement(Element* element) {
+    elements.Add(element);
+}
 
+void Document::addElement(ElementType element, std::string text) {
+    elementCreator->createElement(element);
+    Element *e = elementCreator->getElement();
+    e->setText(text);
+    elements.Add(e);
 }
 
 void Document::replaceText(std::string previousText, std::string newText) {

@@ -26,9 +26,14 @@ void ConcreteDocumentBuilder::setTitle(std::string title) {
     this->title = title;
 }
 
-void ConcreteDocumentBuilder::addElement(ElementType element, std::string text){
-    document->addElement(element, text);
+void ConcreteDocumentBuilder::addParagraph(std::string text) {
+    document->addElement(ET_Paragraph, text);
 }
+
+void ConcreteDocumentBuilder::addHeader(std::string text) {
+    document->addElement(ET_Header, text);
+}
+
 void ConcreteDocumentBuilder::setNewLine(){
     document->addElement(ET_Paragraph, "");
 }

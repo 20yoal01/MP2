@@ -13,19 +13,22 @@
 class DocumentFacade {
 private:
     DocumentDirector* director;
-    ConcreteDocumentBuilder* builder;
+    ConcreteDocumentBuilder* documentBuilder;
 
 public:
+    ElementBuilder* elementBuilder;
     DocumentFacade();
     std::string exportToFile(std::string fileName) const;
     void setExtension(ExtensionType extension);
-    void renderElement(ElementType element, ElementBuilder* elementBuilder);
+    void setElementBuilder(ElementType element);
+    void renderElement(ElementBuilder* elementBuilder);
     void setTitle(std::string text);
     void createMailTemplate();
     void createThesisTemplate();
     void createCalendar();
     void createTextDocument();
-    void addElement(ElementType element, std::string text);
+    void addParagraph(std::string text);
+    void addHeader(std::string text);
     void replaceText(std::string previousText, std::string newText);
     void previewDocument();
     std::string getTitle();

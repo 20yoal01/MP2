@@ -8,26 +8,26 @@ void DocumentDirector::setBuilder(DocumentBuilder* builder){
     this->builder = builder;
 }
 void DocumentDirector::createMailTemplate(){
-    this->builder->addElement(ET_Paragraph, "----------------------------");
-    this->builder->addElement(ET_Header, "This is a mail template!");
+    this->builder->addParagraph("----------------------------");
+    this->builder->addHeader("This is a mail template!");
     this->builder->setNewLine();
-    this->builder->addElement(ET_Paragraph, "----------------------------");
+    this->builder->addParagraph("----------------------------");
 }
 void DocumentDirector::createThesisTemplate(){
-    this->builder->addElement(ET_Paragraph, "----------------------------");
-    this->builder->addElement(ET_Header, "This is a thesis template!");
+    this->builder->addParagraph("----------------------------");
+    this->builder->addHeader("This is a thesis template!");
     this->builder->setNewLine();
-    this->builder->addElement(ET_Paragraph, "----------------------------");
+    this->builder->addParagraph("----------------------------");
 }
 void DocumentDirector::createCalendar(){
-    this->builder->addElement(ET_Paragraph, "----------------------------");
-    this->builder->addElement(ET_Header, "This is a calendar template!");
+    this->builder->addParagraph("----------------------------");
+    this->builder->addHeader("This is a calendar template!");
     this->builder->setNewLine();
-    this->builder->addElement(ET_Paragraph, "----------------------------");
+    this->builder->addParagraph("----------------------------");
 }
 void DocumentDirector::createTextDocument(){
-    this->builder->addElement(ET_Paragraph, "----------------------------");
-    this->builder->addElement(ET_Header, "This is a text document!");
+    this->builder->addParagraph("----------------------------");
+    this->builder->addHeader("This is a text document!");
     this->builder->setNewLine();
-    this->builder->addElement(ET_Paragraph, "----------------------------");
+    this->builder->addParagraph("----------------------------");
 }

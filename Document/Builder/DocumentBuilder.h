@@ -10,7 +10,8 @@
 class DocumentBuilder {
 public:
     virtual void reset() = 0;
-    virtual void addElement(ElementType element, std::string text) = 0;
+    virtual void addParagraph(std::string text) = 0;
+    virtual void addHeader(std::string text) = 0;
     virtual void setNewLine() = 0;
     virtual ~DocumentBuilder(){}
 

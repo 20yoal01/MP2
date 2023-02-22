@@ -19,14 +19,17 @@ int main(){
     document->createThesisTemplate();
     document->previewDocument();
     document->reset();
-    document->addElement(ET_Header, "Welcome");
+    document->addHeader("Welcome");
     document->replaceText("Welcome", "Hejsan");
-    document->addElement(ET_Paragraph, "JAAAA");
+    document->addParagraph("JAAAA");
+
+    //Paragraph tillägg
     ParagraphBuilder* builder = new ParagraphBuilder();
     builder->setFontSize(12);
     builder->setText("C++ suger");
-    document->renderElement(ET_Paragraph, builder);
-    document->addElement(ET_List, "Hej");
+    document->renderElement(builder);
+
+    //List tillägg
     ListBuilder* listBuilder = new ListBuilder();
     for(int i = 0; i < 3; i++){
         listBuilder->addListItem(to_string(i));
@@ -36,7 +39,9 @@ int main(){
         listBuilder->addListItem(to_string(i));
     }
     listBuilder->addList(lElement);
-    document->renderElement(ET_List, listBuilder);
+    document->renderElement(listBuilder);
+
+
     document->setExtension(MARKDOWN);
     //document->previewDocument();
     //document->setExtension(MARKDOWN);

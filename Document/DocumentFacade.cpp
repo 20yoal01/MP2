@@ -5,74 +5,80 @@
 #include "DocumentFacade.h"
 #include "../Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.h"
 #include "FileFactory/FileFactory.h"
+#include "../Element/ElementBuilder/ListBuilder/ListBuilder.h"
+#include "../Element/ElementBuilder/HeaderBuilder/HeaderBuilder.h"
 
 DocumentFacade::DocumentFacade(){
-    builder = new ConcreteDocumentBuilder();
+    documentBuilder = new ConcreteDocumentBuilder();
     director = new DocumentDirector();
-    director->setBuilder(builder);
+    director->setBuilder(documentBuilder);
 }
 
 void DocumentFacade::setTitle(std::string title) {
-    builder->setTitle(title);
+    documentBuilder->setTitle(title);
 }
 
 void DocumentFacade::createMailTemplate() {
     director->createMailTemplate();
-    builder->getDocument();
+    documentBuilder->getDocument();
 }
 
 void DocumentFacade::createThesisTemplate() {
     director->createThesisTemplate();
-    builder->getDocument();
+    documentBuilder->getDocument();
 }
 
 void DocumentFacade::createCalendar() {
     director->createCalendar();
-    builder->getDocument();
+    documentBuilder->getDocument();
 }
 
 void DocumentFacade::createTextDocument() {
     director->createTextDocument();
-    builder->getDocument();
-}
-
-void DocumentFacade::addElement(ElementType element, std::string text) {
-    builder->addElement(element, text);
+    documentBuilder->getDocument();
 }
 
 void DocumentFacade::replaceText(std::string previousText, std::string newText) {
-    builder->replaceText(previousText, newText);
+    documentBuilder->replaceText(previousText, newText);
 }
 
 void DocumentFacade::previewDocument() {
-    builder->getDocument()->printContent();
+    documentBuilder->getDocument()->printContent();
 }
 
 std::string DocumentFacade::getTitle() {
-    builder->getDocument()->getTitle();
+    documentBuilder->getDocument()->getTitle();
 }
 
 void DocumentFacade::reset(){
-    builder->reset();
-    director->setBuilder(builder);
+    documentBuilder->reset();
+    director->setBuilder(documentBuilder);
 }
 
 void DocumentFacade::setExtension(ExtensionType extension) {
-    builder->getDocument()->setExtension(extension);
+    documentBuilder->getDocument()->setExtension(extension);
 }
 
 std::string DocumentFacade::exportToFile(std::string fileName) const{
     FileFactory *factory = new FileFactory;
-    std::unique_ptr<File> HTMLFile = factory->createFile(fileName, builder->getDocument()->getExtension());
+    std::unique_ptr<File> HTMLFile = factory->createFile(fileName, documentBuilder->getDocument()->getExtension());
     if (!HTMLFile->exists()) {
         std::cout << "File does not exist\n";
     }
-    if (HTMLFile->write(builder->getDocument()->getContent())) {
+    if (HTMLFile->write(documentBuilder->getDocument()->getContent())) {
         std::cout << "File written successfully\n";
     }
 }
 
-void DocumentFacade::renderElement(ElementType element, ElementBuilder* elementBuilder) {
+void DocumentFacade::addHeader(std::string text) {
+    documentBuilder->addHeader(text);
+}
+
+void DocumentFacade::addParagraph(std::string text) {
+    documentBuilder->addParagraph(text);
+}
+
+void DocumentFacade::renderElement(ElementBuilder* elementBuilder) {
     Element* elementToAdd = elementBuilder->getElement();
-    builder->renderElement(elementToAdd);
+    documentBuilder->renderElement(elementToAdd);
 }
