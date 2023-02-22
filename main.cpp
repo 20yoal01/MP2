@@ -42,11 +42,19 @@ int main(){
     document->renderElement(listBuilder);
 
 
+    document->setExtension(HTML);
+
+
+    document->undo();
+    document->undo();
+    document->undo();
+
+    document->previewDocument();
+    /*
     document->setExtension(MARKDOWN);
-    //document->previewDocument();
-    //document->setExtension(MARKDOWN);
     document->previewDocument();
     document->setTitle("Test123");
     document->exportToFile("1");
+    */
     return 0;
 };

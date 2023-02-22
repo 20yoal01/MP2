@@ -12,10 +12,12 @@ DocumentFacade::DocumentFacade(){
     documentBuilder = new ConcreteDocumentBuilder();
     director = new DocumentDirector();
     director->setBuilder(documentBuilder);
+    commandManager = new CommandManager;
 }
 
 void DocumentFacade::setTitle(std::string title) {
-    documentBuilder->setTitle(title);
+    std::shared_ptr<ICommand> c(new SetTitleCommand(this, title));
+    commandManager->executeCmd(c);
 }
 
 void DocumentFacade::createMailTemplate() {
@@ -39,7 +41,8 @@ void DocumentFacade::createTextDocument() {
 }
 
 void DocumentFacade::replaceText(std::string previousText, std::string newText) {
-    documentBuilder->replaceText(previousText, newText);
+    std::shared_ptr<ICommand> c(new ReplaceTextCommand(this, previousText, newText));
+    commandManager->executeCmd(c);
 }
 
 void DocumentFacade::previewDocument() {
@@ -52,31 +55,37 @@ void DocumentFacade::reset(){
 }
 
 void DocumentFacade::setExtension(ExtensionType extension) {
-    documentBuilder->getDocument()->setExtension(extension);
+    std::shared_ptr<ICommand> c(new SetExtensionCommand(this, extension));
+    commandManager->executeCmd(c);
 }
 
 std::string DocumentFacade::exportToFile(std::string fileName) const{
     FileFactory *factory = new FileFactory;
     std::unique_ptr<File> HTMLFile = factory->createFile(fileName, documentBuilder->getDocument()->getExtension());
     if (!HTMLFile->exists()) {
-        std::cout << "File does not exist\n";
+        return "File does not exist\n";
     }
     if (HTMLFile->write(documentBuilder->getDocument()->getContent())) {
-        std::cout << "File written successfully\n";
+        return "File written successfully\n";
     }
+
+    return "Something went wrong..";
 }
 
 void DocumentFacade::addHeader(std::string text) {
-    documentBuilder->addHeader(text);
+    std::shared_ptr<ICommand> c(new AddHeaderCommand(this, text));
+    commandManager->executeCmd(c);
 }
 
 void DocumentFacade::addParagraph(std::string text) {
-    documentBuilder->addParagraph(text);
+    std::shared_ptr<ICommand> c(new AddParagraphCommand(this, text));
+    commandManager->executeCmd(c);
 }
 
 void DocumentFacade::renderElement(ElementBuilder* elementBuilder) {
-    Element* elementToAdd = elementBuilder->getElement();
-    documentBuilder->renderElement(elementToAdd);
+    std::shared_ptr<ICommand> c(new RenderElementCommand(this, elementBuilder));
+    commandManager->executeCmd(c);
+
 }
 
 std::string DocumentFacade::getTitle() const {
@@ -85,4 +94,12 @@ std::string DocumentFacade::getTitle() const {
 
 ExtensionType DocumentFacade::getExtension() const {
     return documentBuilder->getDocument()->getExtension();
+}
+
+void DocumentFacade::undo() {
+    commandManager->undo();
+}
+
+void DocumentFacade::redo() {
+    commandManager->redo();
 }

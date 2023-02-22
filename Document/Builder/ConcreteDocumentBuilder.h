@@ -11,7 +11,6 @@
 class ConcreteDocumentBuilder : public DocumentBuilder{
 private:
     Document* document;
-    std::string title;
 
 public:
     void reset();

@@ -35,6 +35,7 @@ public:
     void setTitle(const std::string &title);
     void setExtension(ExtensionType extension);
     ExtensionType getExtension() const;
+    void popElement();
 
     friend class DocumentFacade;
 };

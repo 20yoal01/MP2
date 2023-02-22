@@ -13,17 +13,14 @@ void ConcreteDocumentBuilder::replaceText(std::string previousText, std::string 
 
 void ConcreteDocumentBuilder::reset(){
     this->document = new Document();
-    if((getTitle()).empty()){
-        document->setTitle(title);
-    }
 }
 
 std::string ConcreteDocumentBuilder::getTitle() const {
-    return title;
+    document->getTitle();
 }
 
 void ConcreteDocumentBuilder::setTitle(std::string title) {
-    this->title = title;
+    document->setTitle(title);
 }
 
 void ConcreteDocumentBuilder::addParagraph(std::string text) {

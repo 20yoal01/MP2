@@ -225,6 +225,14 @@ build CMakeFiles/MP2.dir/Document/FileFactory/TextFile/TextFile.cpp.obj: CXX_COM
   TARGET_COMPILE_PDB = CMakeFiles\MP2.dir\
   TARGET_PDB = MP2.pdb
 
+build CMakeFiles/MP2.dir/Document/Command/ICommand.cpp.obj: CXX_COMPILER__MP2_Debug C$:/Users/Gorillaspluch/CLionProjects/MP2/Document/Command/ICommand.cpp || cmake_object_order_depends_target_MP2
+  DEP_FILE = CMakeFiles\MP2.dir\Document\Command\ICommand.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\MP2.dir
+  OBJECT_FILE_DIR = CMakeFiles\MP2.dir\Document\Command
+  TARGET_COMPILE_PDB = CMakeFiles\MP2.dir\
+  TARGET_PDB = MP2.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target MP2
@@ -233,7 +241,7 @@ build CMakeFiles/MP2.dir/Document/FileFactory/TextFile/TextFile.cpp.obj: CXX_COM
 #############################################
 # Link the executable MP2.exe
 
-build MP2.exe: CXX_EXECUTABLE_LINKER__MP2_Debug CMakeFiles/MP2.dir/main.cpp.obj CMakeFiles/MP2.dir/Element/Paragraph/Paragraph.cpp.obj CMakeFiles/MP2.dir/Element/Header/Header.cpp.obj CMakeFiles/MP2.dir/Element/Element.cpp.obj CMakeFiles/MP2.dir/Element/List/List.cpp.obj CMakeFiles/MP2.dir/Element/List/ListElement.cpp.obj CMakeFiles/MP2.dir/Element/List/ListItem.cpp.obj CMakeFiles/MP2.dir/Document/Builder/ConcreteDocumentBuilder.cpp.obj CMakeFiles/MP2.dir/Document/Director/DocumentDirector.cpp.obj CMakeFiles/MP2.dir/Document/Document.cpp.obj CMakeFiles/MP2.dir/Document/DocumentFacade.cpp.obj CMakeFiles/MP2.dir/Element/Creator/ElementCreator.cpp.obj CMakeFiles/MP2.dir/Element/ElementBuilder/HeaderBuilder/HeaderBuilder.cpp.obj CMakeFiles/MP2.dir/Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.cpp.obj CMakeFiles/MP2.dir/Element/ElementBuilder/ListBuilder/ListBuilder.cpp.obj CMakeFiles/MP2.dir/Element/Visitor/HTMLVisitor/HTMLVisitor.cpp.obj CMakeFiles/MP2.dir/Element/Visitor/MarkDownVisitor/MarkDownVisitor.cpp.obj CMakeFiles/MP2.dir/Element/Visitor/DefaultVisitor/DefaultVisitor.cpp.obj CMakeFiles/MP2.dir/Document/FileFactory/HTMLFile/HTMLFile.cpp.obj CMakeFiles/MP2.dir/Document/FileFactory/FileFactory.cpp.obj CMakeFiles/MP2.dir/Document/FileFactory/MarkDownFile/MarkDownFile.cpp.obj CMakeFiles/MP2.dir/Document/FileFactory/TextFile/TextFile.cpp.obj
+build MP2.exe: CXX_EXECUTABLE_LINKER__MP2_Debug CMakeFiles/MP2.dir/main.cpp.obj CMakeFiles/MP2.dir/Element/Paragraph/Paragraph.cpp.obj CMakeFiles/MP2.dir/Element/Header/Header.cpp.obj CMakeFiles/MP2.dir/Element/Element.cpp.obj CMakeFiles/MP2.dir/Element/List/List.cpp.obj CMakeFiles/MP2.dir/Element/List/ListElement.cpp.obj CMakeFiles/MP2.dir/Element/List/ListItem.cpp.obj CMakeFiles/MP2.dir/Document/Builder/ConcreteDocumentBuilder.cpp.obj CMakeFiles/MP2.dir/Document/Director/DocumentDirector.cpp.obj CMakeFiles/MP2.dir/Document/Document.cpp.obj CMakeFiles/MP2.dir/Document/DocumentFacade.cpp.obj CMakeFiles/MP2.dir/Element/Creator/ElementCreator.cpp.obj CMakeFiles/MP2.dir/Element/ElementBuilder/HeaderBuilder/HeaderBuilder.cpp.obj CMakeFiles/MP2.dir/Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.cpp.obj CMakeFiles/MP2.dir/Element/ElementBuilder/ListBuilder/ListBuilder.cpp.obj CMakeFiles/MP2.dir/Element/Visitor/HTMLVisitor/HTMLVisitor.cpp.obj CMakeFiles/MP2.dir/Element/Visitor/MarkDownVisitor/MarkDownVisitor.cpp.obj CMakeFiles/MP2.dir/Element/Visitor/DefaultVisitor/DefaultVisitor.cpp.obj CMakeFiles/MP2.dir/Document/FileFactory/HTMLFile/HTMLFile.cpp.obj CMakeFiles/MP2.dir/Document/FileFactory/FileFactory.cpp.obj CMakeFiles/MP2.dir/Document/FileFactory/MarkDownFile/MarkDownFile.cpp.obj CMakeFiles/MP2.dir/Document/FileFactory/TextFile/TextFile.cpp.obj CMakeFiles/MP2.dir/Document/Command/ICommand.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\MP2.dir

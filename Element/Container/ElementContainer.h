@@ -13,6 +13,7 @@ class ElementContainer {
 
 public:
     void Add(T a);
+    void Remove();
     ElementIterator<T, ElementContainer> *CreateIterator();
 
 private:

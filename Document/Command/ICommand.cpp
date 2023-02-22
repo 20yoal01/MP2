@@ -14,7 +14,8 @@ void CommandManager::undo() {
     if (mUndoStack.size() <= 0) {
         return;
     }
-    mUndoStack.top()->undo();          // undo most recently executed command
+    std::shared_ptr<ICommand> tcommand = mUndoStack.top(); // undo most recently executed command
+    tcommand->undo();
     mRedoStack.push(mUndoStack.top()); // add undone command to undo stack
     mUndoStack.pop();                  // remove top entry from undo stack
 }
@@ -38,35 +39,34 @@ SetExtensionCommand::SetExtensionCommand(DocumentFacade *document, ExtensionType
 };
 
 void SetExtensionCommand::execute() {
-
+    oldExtension = document->getExtension();
     document->documentBuilder->getDocument()->setExtension(newExtension);
-
 }
 
 void SetExtensionCommand::redo() {
-
+    document->documentBuilder->getDocument()->setExtension(oldExtension);
 }
 
 void SetExtensionCommand::undo() {
-
+    document->documentBuilder->getDocument()->setExtension(oldExtension);
 }
 
 
-RenderElementCommand::RenderElementCommand(DocumentFacade *document, Element *element){
+RenderElementCommand::RenderElementCommand(DocumentFacade *document, ElementBuilder* elementBuilder){
     this->document = document;
-    newElement = element;
+    element = elementBuilder->getElement();
 };
 
 void RenderElementCommand::execute() {
-
+    document->documentBuilder->renderElement(element);
 }
 
 void RenderElementCommand::redo() {
-
+    document->documentBuilder->renderElement(element);
 }
 
 void RenderElementCommand::undo() {
-
+    document->documentBuilder->getDocument()->popElement();
 }
 
 
@@ -77,71 +77,77 @@ SetTitleCommand::SetTitleCommand(DocumentFacade *document, std::string title){
 };
 
 void SetTitleCommand::execute() {
-
+    oldTitle = document->getTitle();
+    document->documentBuilder->setTitle(newTitle);
 }
 
 void SetTitleCommand::redo() {
-
+    document->setTitle(newTitle);
 }
 
 void SetTitleCommand::undo() {
-
+    document->setTitle(oldTitle);
 }
 
 
 
 
-AddParagraphCommand::AddParagraphCommand(DocumentFacade *document, Element *element){
+AddParagraphCommand::AddParagraphCommand(DocumentFacade *document, std::string text){
     this->document = document;
-    newElement = element;
+    this->text = text;
 };
 
 void AddParagraphCommand::execute() {
-
+    document->documentBuilder->addParagraph(text);
 }
 
 void AddParagraphCommand::redo() {
-
+    document->documentBuilder->addParagraph(text);
 }
 
 void AddParagraphCommand::undo() {
-
+    document->documentBuilder->getDocument()->popElement();
 }
 
 
 
-AddHeaderCommand::AddHeaderCommand(DocumentFacade *document, Element *element){
+AddHeaderCommand::AddHeaderCommand(DocumentFacade *document, std::string text){
     this->document = document;
-    newElement = element;
+    this->text = text;
 };
 
 void AddHeaderCommand::execute() {
-
+    document->documentBuilder->addHeader(text);
 }
 
 void AddHeaderCommand::redo() {
-
+    document->documentBuilder->addHeader(text);
 }
 
 void AddHeaderCommand::undo() {
-
+    document->documentBuilder->getDocument()->popElement();
 }
 
 
 
-ReplaceTextCommand::ReplaceTextCommand(DocumentFacade *document, std::string text){
+ReplaceTextCommand::ReplaceTextCommand(DocumentFacade *document, std::string prevText, std::string newText){
     this->document = document;
-    this->newText = text;
+    this->newText = newText;
+    this->prevText = prevText;
 };
 
 void ReplaceTextCommand::execute() {
-
+    document->documentBuilder->replaceText(prevText, newText);
+    std::swap(newText, prevText);
 }
 
 void ReplaceTextCommand::redo() {
-
+    std::swap(newText, prevText);
+    document->documentBuilder->replaceText(prevText, newText);
 }
 
-void ReplaceTextCommand::undo() {
 
+void ReplaceTextCommand::undo() {
+    std::swap(newText, prevText);
+    document->documentBuilder->replaceText(prevText, newText);
 }

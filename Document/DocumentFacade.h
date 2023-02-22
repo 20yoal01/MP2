@@ -8,12 +8,18 @@
 #include "./Builder/ConcreteDocumentBuilder.h"
 #include "./Director/DocumentDirector.h"
 #include "../Element/ElementBuilder/ElementBuilder.h"
+#include "Command/ICommand.h"
+
 #include <iostream>
 
+class CommandManager;
+
 class DocumentFacade {
+
 private:
     DocumentDirector* director;
     ConcreteDocumentBuilder* documentBuilder;
+    CommandManager *commandManager;
 
 public:
     DocumentFacade();
@@ -33,6 +39,8 @@ public:
     ExtensionType getExtension() const;
     std::string getTitle() const;
     void reset();
+    void undo();
+    void redo();
 
     friend class SetExtensionCommand;
     friend class RenderElementCommand;

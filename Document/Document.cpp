@@ -74,10 +74,14 @@ void Document::printContent() {
     }
 }
 
+void Document::popElement() {
+    elements.Remove();
+}
+
 const std::string &Document::getTitle() const {
     return title;
 }
 
 void Document::setTitle(const std::string &title) {
-    Document::title = title;
+    this->title = title;
 }

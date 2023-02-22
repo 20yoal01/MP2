@@ -11,6 +11,8 @@
 #include "../../Element/Visitor/ExtensionType.h"
 #include "../DocumentFacade.h"
 
+class DocumentFacade;
+
 class ICommand {
 public:
     virtual void execute() = 0;
@@ -38,7 +40,6 @@ private:
     ExtensionType newExtension;
 
 public:
-    ~SetExtensionCommand();
     SetExtensionCommand(DocumentFacade *document, ExtensionType extension);
     void execute() override;
     void undo() override;
@@ -48,16 +49,13 @@ public:
 class RenderElementCommand : public ICommand {
 private:
     DocumentFacade *document;
-    Element *oldElement;
-    Element *newElement;
+    Element *element;
 
 public:
     void execute() override;
     void undo() override;
     void redo() override;
-    RenderElementCommand(DocumentFacade *document, Element *element);
-    ~RenderElementCommand();
-
+    RenderElementCommand(DocumentFacade *document, ElementBuilder* elementBuilder);
 };
 class SetTitleCommand: public ICommand {
 private:
@@ -70,47 +68,41 @@ public:
     void undo() override;
     void redo() override;
     SetTitleCommand(DocumentFacade *document, std::string title);
-    ~SetTitleCommand();
-
 };
 class AddParagraphCommand: public ICommand {
 private:
     DocumentFacade *document;
-    Element *oldElement;
-    Element *newElement;
+    std::string text;
+
 public:
     void execute() override;
     void undo() override;
     void redo() override;
-    AddParagraphCommand(DocumentFacade *document, Element *element);
-    ~AddParagraphCommand();
-
+    AddParagraphCommand(DocumentFacade *document, std::string text);
 };
 class AddHeaderCommand : public ICommand {
 private:
     DocumentFacade *document;
-    Element *oldElement;
-    Element *newElement;
+    std::string text;
+
 public:
     void execute() override;
     void undo() override;
     void redo() override;
-    AddHeaderCommand(DocumentFacade *document, Element *element);
-    ~AddHeaderCommand();
-
+    AddHeaderCommand(DocumentFacade *document, std::string text);
 };
 class ReplaceTextCommand : public ICommand {
 private:
     DocumentFacade *document;
-    std::string oldText;
+    std::string prevText;
     std::string newText;
 
 public:
     void execute() override;
     void undo() override;
     void redo() override;
-    ReplaceTextCommand(DocumentFacade *document, std::string text);
-    ~ReplaceTextCommand();
+    void switchText();
+    ReplaceTextCommand(DocumentFacade *document, std::string prevText, std::string newText);
 };
 
 #endif //MP2_ICOMMAND_H
