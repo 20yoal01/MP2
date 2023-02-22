@@ -4,6 +4,7 @@
 
 #include "DocumentFacade.h"
 #include "../Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.h"
+#include "FileFactory/FileFactory.h"
 
 DocumentFacade::DocumentFacade(){
     builder = new ConcreteDocumentBuilder();
@@ -58,6 +59,17 @@ void DocumentFacade::reset(){
 
 void DocumentFacade::setExtension(ExtensionType extension) {
     builder->getDocument()->setExtension(extension);
+}
+
+std::string DocumentFacade::exportToFile(std::string fileName) const{
+    FileFactory *factory = new FileFactory;
+    std::unique_ptr<File> HTMLFile = factory->createFile(fileName, builder->getDocument()->getExtension());
+    if (!HTMLFile->exists()) {
+        std::cout << "File does not exist\n";
+    }
+    if (HTMLFile->write(builder->getDocument()->getContent())) {
+        std::cout << "File written successfully\n";
+    }
 }
 
 void DocumentFacade::renderElement(ElementType element, ElementBuilder* elementBuilder) {

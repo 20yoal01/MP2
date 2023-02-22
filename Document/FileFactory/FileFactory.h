@@ -10,8 +10,9 @@
 #include <string>
 #include "File.h"
 #include "AbstractFactory.h"
-#include "/HTMLFile/HTMLFile.h"
-#include "/MarkDownFile/MarkDownFile.h"
+#include "./HTMLFile/HTMLFile.h"
+#include "./MarkDownFile/MarkDownFile.h"
+#include "./TextFile//TextFile.h"
 
 class FileFactory : public AbstractFactory<std::unique_ptr<File>> {
 public:

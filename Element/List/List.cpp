@@ -21,11 +21,19 @@ bool List::IsComposite() const {
 std::string List::Accept(ElementVisitor *visitor) const {
     //return visitor->convertList(this);
     std::string result;
+    std::string indentation = "";
+    ListElement* currentParent = this->GetParent();
+
+    while (currentParent != nullptr) {
+        indentation += "\t";
+        currentParent = currentParent->GetParent();
+    }
+
     for(const ListElement *c : children) {
         if (c == children.back()) {
-            result += c->Accept(visitor);
+            result += indentation + c->Accept(visitor);
         } else {
-            result += c->Accept(visitor) + "\n";
+            result += indentation + c->Accept(visitor) + "\n";
         }
     }
     result = visitor->convertList(result);

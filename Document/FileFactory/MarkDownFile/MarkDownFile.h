@@ -12,11 +12,11 @@ class MarkDownFile : public File {
 public:
     MarkDownFile(const std::string& fileName);
 
-    virtual bool exists() const override;
+    bool exists() const override;
 
-    virtual bool write(const std::string& data) override;
+    bool write(const std::string& data) override;
 
-    virtual std::string read() const override;
+    std::string read() const override;
 
 private:
     std::string fileName;

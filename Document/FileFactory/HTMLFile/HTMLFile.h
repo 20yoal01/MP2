@@ -11,13 +11,16 @@ class HTMLFile : public File {
 public:
     HTMLFile(const std::string& fileName);
 
-    virtual bool exists() const override;
+    bool exists() const override;
 
-    virtual bool write(const std::string& data) override;
+    bool write(const std::string& data) override;
 
-    virtual std::string read() const override;
+    std::string read() const override;
+
+    void setTitle(const std::string& title);
 
 private:
+    std::string title;
     std::string fileName;
 };
 #endif //MP2_HTMLFILE_H

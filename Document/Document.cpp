@@ -21,6 +21,7 @@ void Document::renderElement(Element* element) {
 }
 
 void Document::setExtension(ExtensionType extension) {
+    this->extension = extension;
     switch (extension) {
         case DEFAULT:
             visitor = new DefaultVisitor;
@@ -31,6 +32,10 @@ void Document::setExtension(ExtensionType extension) {
         case MARKDOWN:
             visitor = new MarkDownVisitor;
     }
+}
+
+ExtensionType Document::getExtension() const {
+    return extension;
 }
 
 void Document::addElement(ElementType element, std::string text) {
@@ -65,6 +70,14 @@ void Document::replaceText(std::string previousText, std::string newText) {
     if (!elementFound) {
         std::cout << "Element not found!" << std::endl;
     }
+}
+
+std::string Document::getContent() {
+    std::string data;
+    for (elementIterator->First(); !elementIterator->IsDone(); elementIterator->Next()) {
+        data += (*elementIterator->Current())->Accept(visitor) + "\n";
+    }
+    return data;
 }
 
 void Document::printContent() {

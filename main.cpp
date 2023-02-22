@@ -10,6 +10,7 @@
 #include "Element/ElementBuilder/ListBuilder/ListBuilder.h"
 #include "Document/FileFactory/HTMLFile/HTMLFile.h"
 #include "Document/FileFactory/MarkDownFile/MarkDownFile.h"
+#include "Document/FileFactory/FileFactory.h"
 
 using namespace std;
 
@@ -36,39 +37,11 @@ int main(){
     }
     listBuilder->addList(lElement);
     document->renderElement(ET_List, listBuilder);
-    document->setExtension(HTML);
-    document->previewDocument();
     document->setExtension(MARKDOWN);
+    //document->previewDocument();
+    //document->setExtension(MARKDOWN);
     document->previewDocument();
-
-
-    //skapa HTMLfil
-
-    HTMLFile myfile("example1.html");
-
-    if (!myfile.exists()) {
-        std::cout << "File does not exist\n";
-    }
-
-    if (myfile.write("<html><body><h1>Hello, World!</h1></body></html>")) {
-        std::cout << "File written successfully\n";
-    }
-
-    std::string data = myfile.read();
-    std::cout << "File contents: " << data << "\n";
-
-    //skapa Markdown fil
-    MarkDownFile myfile1("example2.md");
-
-    if (!myfile1.exists()) {
-        std::cout << "File does not exist\n";
-    }
-
-    if (myfile1.write("#Hello, World!\nThis is a markdown file.")) {
-        std::cout << "File written successfully\n";
-    }
-
-    std::string data1 = myfile1.read();
-    std::cout << "File contents: " << data1 << "\n";
+    document->setTitle("Test123");
+    document->exportToFile("1");
     return 0;
 };

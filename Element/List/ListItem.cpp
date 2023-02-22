@@ -13,7 +13,7 @@ void ListItem::setColor(std::string color) {
 }
 
 std::string ListItem::getText() const {
-    return "\xFA" + text;
+    return text;
 }
 
 std::string ListItem::getColor() const {

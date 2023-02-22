@@ -22,6 +22,8 @@ private:
     ElementIterator<Element*, ElementContainer<Element*>> *elementIterator;
     std::string title;
     ElementVisitor *visitor;
+    ExtensionType extension;
+    std::string getContent();
 
 public:
     Document();
@@ -32,6 +34,9 @@ public:
     const std::string &getTitle() const;
     void setTitle(const std::string &title);
     void setExtension(ExtensionType extension);
+    ExtensionType getExtension() const;
+
+    friend class DocumentFacade;
 };
 
 

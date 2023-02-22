@@ -18,9 +18,26 @@ bool HTMLFile::write(const std::string& data) {
     if (!file.is_open()) {
         return false;
     }
-    file << data;
+    std::string output = "<!DOCTYPE html>\n"
+                         "<html lang=\"en\">\n"
+                         "<head>\n"
+                         "  <meta charset=\"UTF-8\" />\n"
+                         "  <title>" + title + "</title>\n"
+                         "  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n"
+                         "  <meta name=\"description\" content=\"\" />\n"
+                         "  <link rel=\"icon\" href=\"favicon.png\">\n"
+                         "</head>\n"
+                         "<body>\n"
+                         + data + "\n"
+                         "</body>\n"
+                         "</html>";
+    file << output;
     file.close();
     return true;
+}
+
+void HTMLFile::setTitle(const std::string& title) {
+    this->title = title;
 }
 
 std::string HTMLFile::read() const {

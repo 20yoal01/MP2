@@ -10,9 +10,9 @@ class TextFile : public File {
 
 public:
     TextFile(const std::string& fileName);
-    virtual bool exists() const override;
-    virtual bool write(const std::string& data) override;
-    virtual std::string read() const override;
+    bool exists() const override;
+    bool write(const std::string& data) override;
+    std::string read() const override;
 
 private:
     std::string fileName;

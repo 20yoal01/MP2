@@ -17,6 +17,7 @@ private:
 
 public:
     DocumentFacade();
+    std::string exportToFile(std::string fileName) const;
     void setExtension(ExtensionType extension);
     void renderElement(ElementType element, ElementBuilder* elementBuilder);
     void setTitle(std::string text);

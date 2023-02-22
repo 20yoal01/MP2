@@ -3,23 +3,20 @@
 //
 
 #include "FileFactory.h"
-#include "./HTMLFile/HTMLFile.h"
-#include "/MarkDownFile/MarkDownFile.h"
-#include "/TextFile//TextFile.h"
 
 std::unique_ptr<File> FileFactory::createFile(const std::string& fileName, ExtensionType type) const {
     std::string fileFormat;
-    File *file;
+    std::unique_ptr<File> file;
     switch(type){
         case DEFAULT:  fileFormat =   ".txt";
-        file = new TextFile(fileName + fileFormat);
+        file = std::make_unique<TextFile>(fileName + fileFormat);
         break;
         case MARKDOWN: fileFormat =    ".md";
-        file = new MarkDownFile(fileName + fileFormat);
+        file = std::make_unique<MarkDownFile>(fileName + fileFormat);
         break;
         case HTML:     fileFormat =  ".html";
-        file = new HTMLFile(fileName + fileFormat);
+        file = std::make_unique<HTMLFile>(fileName + fileFormat);
         break;
     }
-    return std::unique_ptr<File> file;
+    return file;
 }
