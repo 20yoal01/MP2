@@ -82,10 +82,58 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/MP2/Element/Container/ElementContainer.cpp">
+		<Unit filename="C:/MP2/Document/Builder/ConcreteDocumentBuilder.cpp">
 			<Option target="MP2"/>
 		</Unit>
-		<Unit filename="C:/MP2/Element/Container/ElementContainer.h">
+		<Unit filename="C:/MP2/Document/Builder/ConcreteDocumentBuilder.h">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Document/Command/ICommand.cpp">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Document/Command/ICommand.h">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Document/Director/DocumentDirector.cpp">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Document/Director/DocumentDirector.h">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Document/Document.cpp">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Document/Document.h">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Document/DocumentFacade.cpp">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Document/DocumentFacade.h">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Document/FileFactory/FileFactory.cpp">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Document/FileFactory/FileFactory.h">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Document/FileFactory/HTMLFile/HTMLFile.cpp">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Document/FileFactory/HTMLFile/HTMLFile.h">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Document/FileFactory/MarkDownFile/MarkDownFile.cpp">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Document/FileFactory/MarkDownFile/MarkDownFile.h">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Document/FileFactory/TextFile/TextFile.cpp">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Document/FileFactory/TextFile/TextFile.h">
 			<Option target="MP2"/>
 		</Unit>
 		<Unit filename="C:/MP2/Element/Creator/ElementCreator.cpp">
@@ -100,16 +148,28 @@
 		<Unit filename="C:/MP2/Element/Element.h">
 			<Option target="MP2"/>
 		</Unit>
+		<Unit filename="C:/MP2/Element/ElementBuilder/HeaderBuilder/HeaderBuilder.cpp">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Element/ElementBuilder/HeaderBuilder/HeaderBuilder.h">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Element/ElementBuilder/ListBuilder/ListBuilder.cpp">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Element/ElementBuilder/ListBuilder/ListBuilder.h">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.cpp">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.h">
+			<Option target="MP2"/>
+		</Unit>
 		<Unit filename="C:/MP2/Element/Header/Header.cpp">
 			<Option target="MP2"/>
 		</Unit>
 		<Unit filename="C:/MP2/Element/Header/Header.h">
-			<Option target="MP2"/>
-		</Unit>
-		<Unit filename="C:/MP2/Element/Iterator/ElementIterator.cpp">
-			<Option target="MP2"/>
-		</Unit>
-		<Unit filename="C:/MP2/Element/Iterator/ElementIterator.h">
 			<Option target="MP2"/>
 		</Unit>
 		<Unit filename="C:/MP2/Element/List/List.cpp">
@@ -118,10 +178,40 @@
 		<Unit filename="C:/MP2/Element/List/List.h">
 			<Option target="MP2"/>
 		</Unit>
+		<Unit filename="C:/MP2/Element/List/ListElement.cpp">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Element/List/ListElement.h">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Element/List/ListItem.cpp">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Element/List/ListItem.h">
+			<Option target="MP2"/>
+		</Unit>
 		<Unit filename="C:/MP2/Element/Paragraph/Paragraph.cpp">
 			<Option target="MP2"/>
 		</Unit>
 		<Unit filename="C:/MP2/Element/Paragraph/Paragraph.h">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Element/Visitor/DefaultVisitor/DefaultVisitor.cpp">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Element/Visitor/DefaultVisitor/DefaultVisitor.h">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Element/Visitor/HTMLVisitor/HTMLVisitor.cpp">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Element/Visitor/HTMLVisitor/HTMLVisitor.h">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Element/Visitor/MarkDownVisitor/MarkDownVisitor.cpp">
+			<Option target="MP2"/>
+		</Unit>
+		<Unit filename="C:/MP2/Element/Visitor/MarkDownVisitor/MarkDownVisitor.h">
 			<Option target="MP2"/>
 		</Unit>
 		<Unit filename="C:/MP2/main.cpp">

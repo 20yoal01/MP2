@@ -128,29 +128,221 @@ MP2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/build
 .PHONY : MP2/fast
 
-Element/Container/ElementContainer.obj: Element/Container/ElementContainer.cpp.obj
-.PHONY : Element/Container/ElementContainer.obj
+Document/Builder/ConcreteDocumentBuilder.obj: Document/Builder/ConcreteDocumentBuilder.cpp.obj
+.PHONY : Document/Builder/ConcreteDocumentBuilder.obj
 
 # target to build an object file
-Element/Container/ElementContainer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/Container/ElementContainer.cpp.obj
-.PHONY : Element/Container/ElementContainer.cpp.obj
+Document/Builder/ConcreteDocumentBuilder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/Builder/ConcreteDocumentBuilder.cpp.obj
+.PHONY : Document/Builder/ConcreteDocumentBuilder.cpp.obj
 
-Element/Container/ElementContainer.i: Element/Container/ElementContainer.cpp.i
-.PHONY : Element/Container/ElementContainer.i
+Document/Builder/ConcreteDocumentBuilder.i: Document/Builder/ConcreteDocumentBuilder.cpp.i
+.PHONY : Document/Builder/ConcreteDocumentBuilder.i
 
 # target to preprocess a source file
-Element/Container/ElementContainer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/Container/ElementContainer.cpp.i
-.PHONY : Element/Container/ElementContainer.cpp.i
+Document/Builder/ConcreteDocumentBuilder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/Builder/ConcreteDocumentBuilder.cpp.i
+.PHONY : Document/Builder/ConcreteDocumentBuilder.cpp.i
 
-Element/Container/ElementContainer.s: Element/Container/ElementContainer.cpp.s
-.PHONY : Element/Container/ElementContainer.s
+Document/Builder/ConcreteDocumentBuilder.s: Document/Builder/ConcreteDocumentBuilder.cpp.s
+.PHONY : Document/Builder/ConcreteDocumentBuilder.s
 
 # target to generate assembly for a file
-Element/Container/ElementContainer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/Container/ElementContainer.cpp.s
-.PHONY : Element/Container/ElementContainer.cpp.s
+Document/Builder/ConcreteDocumentBuilder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/Builder/ConcreteDocumentBuilder.cpp.s
+.PHONY : Document/Builder/ConcreteDocumentBuilder.cpp.s
+
+Document/Command/ICommand.obj: Document/Command/ICommand.cpp.obj
+.PHONY : Document/Command/ICommand.obj
+
+# target to build an object file
+Document/Command/ICommand.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/Command/ICommand.cpp.obj
+.PHONY : Document/Command/ICommand.cpp.obj
+
+Document/Command/ICommand.i: Document/Command/ICommand.cpp.i
+.PHONY : Document/Command/ICommand.i
+
+# target to preprocess a source file
+Document/Command/ICommand.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/Command/ICommand.cpp.i
+.PHONY : Document/Command/ICommand.cpp.i
+
+Document/Command/ICommand.s: Document/Command/ICommand.cpp.s
+.PHONY : Document/Command/ICommand.s
+
+# target to generate assembly for a file
+Document/Command/ICommand.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/Command/ICommand.cpp.s
+.PHONY : Document/Command/ICommand.cpp.s
+
+Document/Director/DocumentDirector.obj: Document/Director/DocumentDirector.cpp.obj
+.PHONY : Document/Director/DocumentDirector.obj
+
+# target to build an object file
+Document/Director/DocumentDirector.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/Director/DocumentDirector.cpp.obj
+.PHONY : Document/Director/DocumentDirector.cpp.obj
+
+Document/Director/DocumentDirector.i: Document/Director/DocumentDirector.cpp.i
+.PHONY : Document/Director/DocumentDirector.i
+
+# target to preprocess a source file
+Document/Director/DocumentDirector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/Director/DocumentDirector.cpp.i
+.PHONY : Document/Director/DocumentDirector.cpp.i
+
+Document/Director/DocumentDirector.s: Document/Director/DocumentDirector.cpp.s
+.PHONY : Document/Director/DocumentDirector.s
+
+# target to generate assembly for a file
+Document/Director/DocumentDirector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/Director/DocumentDirector.cpp.s
+.PHONY : Document/Director/DocumentDirector.cpp.s
+
+Document/Document.obj: Document/Document.cpp.obj
+.PHONY : Document/Document.obj
+
+# target to build an object file
+Document/Document.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/Document.cpp.obj
+.PHONY : Document/Document.cpp.obj
+
+Document/Document.i: Document/Document.cpp.i
+.PHONY : Document/Document.i
+
+# target to preprocess a source file
+Document/Document.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/Document.cpp.i
+.PHONY : Document/Document.cpp.i
+
+Document/Document.s: Document/Document.cpp.s
+.PHONY : Document/Document.s
+
+# target to generate assembly for a file
+Document/Document.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/Document.cpp.s
+.PHONY : Document/Document.cpp.s
+
+Document/DocumentFacade.obj: Document/DocumentFacade.cpp.obj
+.PHONY : Document/DocumentFacade.obj
+
+# target to build an object file
+Document/DocumentFacade.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/DocumentFacade.cpp.obj
+.PHONY : Document/DocumentFacade.cpp.obj
+
+Document/DocumentFacade.i: Document/DocumentFacade.cpp.i
+.PHONY : Document/DocumentFacade.i
+
+# target to preprocess a source file
+Document/DocumentFacade.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/DocumentFacade.cpp.i
+.PHONY : Document/DocumentFacade.cpp.i
+
+Document/DocumentFacade.s: Document/DocumentFacade.cpp.s
+.PHONY : Document/DocumentFacade.s
+
+# target to generate assembly for a file
+Document/DocumentFacade.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/DocumentFacade.cpp.s
+.PHONY : Document/DocumentFacade.cpp.s
+
+Document/FileFactory/FileFactory.obj: Document/FileFactory/FileFactory.cpp.obj
+.PHONY : Document/FileFactory/FileFactory.obj
+
+# target to build an object file
+Document/FileFactory/FileFactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/FileFactory/FileFactory.cpp.obj
+.PHONY : Document/FileFactory/FileFactory.cpp.obj
+
+Document/FileFactory/FileFactory.i: Document/FileFactory/FileFactory.cpp.i
+.PHONY : Document/FileFactory/FileFactory.i
+
+# target to preprocess a source file
+Document/FileFactory/FileFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/FileFactory/FileFactory.cpp.i
+.PHONY : Document/FileFactory/FileFactory.cpp.i
+
+Document/FileFactory/FileFactory.s: Document/FileFactory/FileFactory.cpp.s
+.PHONY : Document/FileFactory/FileFactory.s
+
+# target to generate assembly for a file
+Document/FileFactory/FileFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/FileFactory/FileFactory.cpp.s
+.PHONY : Document/FileFactory/FileFactory.cpp.s
+
+Document/FileFactory/HTMLFile/HTMLFile.obj: Document/FileFactory/HTMLFile/HTMLFile.cpp.obj
+.PHONY : Document/FileFactory/HTMLFile/HTMLFile.obj
+
+# target to build an object file
+Document/FileFactory/HTMLFile/HTMLFile.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/FileFactory/HTMLFile/HTMLFile.cpp.obj
+.PHONY : Document/FileFactory/HTMLFile/HTMLFile.cpp.obj
+
+Document/FileFactory/HTMLFile/HTMLFile.i: Document/FileFactory/HTMLFile/HTMLFile.cpp.i
+.PHONY : Document/FileFactory/HTMLFile/HTMLFile.i
+
+# target to preprocess a source file
+Document/FileFactory/HTMLFile/HTMLFile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/FileFactory/HTMLFile/HTMLFile.cpp.i
+.PHONY : Document/FileFactory/HTMLFile/HTMLFile.cpp.i
+
+Document/FileFactory/HTMLFile/HTMLFile.s: Document/FileFactory/HTMLFile/HTMLFile.cpp.s
+.PHONY : Document/FileFactory/HTMLFile/HTMLFile.s
+
+# target to generate assembly for a file
+Document/FileFactory/HTMLFile/HTMLFile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/FileFactory/HTMLFile/HTMLFile.cpp.s
+.PHONY : Document/FileFactory/HTMLFile/HTMLFile.cpp.s
+
+Document/FileFactory/MarkDownFile/MarkDownFile.obj: Document/FileFactory/MarkDownFile/MarkDownFile.cpp.obj
+.PHONY : Document/FileFactory/MarkDownFile/MarkDownFile.obj
+
+# target to build an object file
+Document/FileFactory/MarkDownFile/MarkDownFile.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/FileFactory/MarkDownFile/MarkDownFile.cpp.obj
+.PHONY : Document/FileFactory/MarkDownFile/MarkDownFile.cpp.obj
+
+Document/FileFactory/MarkDownFile/MarkDownFile.i: Document/FileFactory/MarkDownFile/MarkDownFile.cpp.i
+.PHONY : Document/FileFactory/MarkDownFile/MarkDownFile.i
+
+# target to preprocess a source file
+Document/FileFactory/MarkDownFile/MarkDownFile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/FileFactory/MarkDownFile/MarkDownFile.cpp.i
+.PHONY : Document/FileFactory/MarkDownFile/MarkDownFile.cpp.i
+
+Document/FileFactory/MarkDownFile/MarkDownFile.s: Document/FileFactory/MarkDownFile/MarkDownFile.cpp.s
+.PHONY : Document/FileFactory/MarkDownFile/MarkDownFile.s
+
+# target to generate assembly for a file
+Document/FileFactory/MarkDownFile/MarkDownFile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/FileFactory/MarkDownFile/MarkDownFile.cpp.s
+.PHONY : Document/FileFactory/MarkDownFile/MarkDownFile.cpp.s
+
+Document/FileFactory/TextFile/TextFile.obj: Document/FileFactory/TextFile/TextFile.cpp.obj
+.PHONY : Document/FileFactory/TextFile/TextFile.obj
+
+# target to build an object file
+Document/FileFactory/TextFile/TextFile.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/FileFactory/TextFile/TextFile.cpp.obj
+.PHONY : Document/FileFactory/TextFile/TextFile.cpp.obj
+
+Document/FileFactory/TextFile/TextFile.i: Document/FileFactory/TextFile/TextFile.cpp.i
+.PHONY : Document/FileFactory/TextFile/TextFile.i
+
+# target to preprocess a source file
+Document/FileFactory/TextFile/TextFile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/FileFactory/TextFile/TextFile.cpp.i
+.PHONY : Document/FileFactory/TextFile/TextFile.cpp.i
+
+Document/FileFactory/TextFile/TextFile.s: Document/FileFactory/TextFile/TextFile.cpp.s
+.PHONY : Document/FileFactory/TextFile/TextFile.s
+
+# target to generate assembly for a file
+Document/FileFactory/TextFile/TextFile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Document/FileFactory/TextFile/TextFile.cpp.s
+.PHONY : Document/FileFactory/TextFile/TextFile.cpp.s
 
 Element/Creator/ElementCreator.obj: Element/Creator/ElementCreator.cpp.obj
 .PHONY : Element/Creator/ElementCreator.obj
@@ -200,6 +392,78 @@ Element/Element.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/Element.cpp.s
 .PHONY : Element/Element.cpp.s
 
+Element/ElementBuilder/HeaderBuilder/HeaderBuilder.obj: Element/ElementBuilder/HeaderBuilder/HeaderBuilder.cpp.obj
+.PHONY : Element/ElementBuilder/HeaderBuilder/HeaderBuilder.obj
+
+# target to build an object file
+Element/ElementBuilder/HeaderBuilder/HeaderBuilder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/ElementBuilder/HeaderBuilder/HeaderBuilder.cpp.obj
+.PHONY : Element/ElementBuilder/HeaderBuilder/HeaderBuilder.cpp.obj
+
+Element/ElementBuilder/HeaderBuilder/HeaderBuilder.i: Element/ElementBuilder/HeaderBuilder/HeaderBuilder.cpp.i
+.PHONY : Element/ElementBuilder/HeaderBuilder/HeaderBuilder.i
+
+# target to preprocess a source file
+Element/ElementBuilder/HeaderBuilder/HeaderBuilder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/ElementBuilder/HeaderBuilder/HeaderBuilder.cpp.i
+.PHONY : Element/ElementBuilder/HeaderBuilder/HeaderBuilder.cpp.i
+
+Element/ElementBuilder/HeaderBuilder/HeaderBuilder.s: Element/ElementBuilder/HeaderBuilder/HeaderBuilder.cpp.s
+.PHONY : Element/ElementBuilder/HeaderBuilder/HeaderBuilder.s
+
+# target to generate assembly for a file
+Element/ElementBuilder/HeaderBuilder/HeaderBuilder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/ElementBuilder/HeaderBuilder/HeaderBuilder.cpp.s
+.PHONY : Element/ElementBuilder/HeaderBuilder/HeaderBuilder.cpp.s
+
+Element/ElementBuilder/ListBuilder/ListBuilder.obj: Element/ElementBuilder/ListBuilder/ListBuilder.cpp.obj
+.PHONY : Element/ElementBuilder/ListBuilder/ListBuilder.obj
+
+# target to build an object file
+Element/ElementBuilder/ListBuilder/ListBuilder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/ElementBuilder/ListBuilder/ListBuilder.cpp.obj
+.PHONY : Element/ElementBuilder/ListBuilder/ListBuilder.cpp.obj
+
+Element/ElementBuilder/ListBuilder/ListBuilder.i: Element/ElementBuilder/ListBuilder/ListBuilder.cpp.i
+.PHONY : Element/ElementBuilder/ListBuilder/ListBuilder.i
+
+# target to preprocess a source file
+Element/ElementBuilder/ListBuilder/ListBuilder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/ElementBuilder/ListBuilder/ListBuilder.cpp.i
+.PHONY : Element/ElementBuilder/ListBuilder/ListBuilder.cpp.i
+
+Element/ElementBuilder/ListBuilder/ListBuilder.s: Element/ElementBuilder/ListBuilder/ListBuilder.cpp.s
+.PHONY : Element/ElementBuilder/ListBuilder/ListBuilder.s
+
+# target to generate assembly for a file
+Element/ElementBuilder/ListBuilder/ListBuilder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/ElementBuilder/ListBuilder/ListBuilder.cpp.s
+.PHONY : Element/ElementBuilder/ListBuilder/ListBuilder.cpp.s
+
+Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.obj: Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.cpp.obj
+.PHONY : Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.obj
+
+# target to build an object file
+Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.cpp.obj
+.PHONY : Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.cpp.obj
+
+Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.i: Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.cpp.i
+.PHONY : Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.i
+
+# target to preprocess a source file
+Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.cpp.i
+.PHONY : Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.cpp.i
+
+Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.s: Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.cpp.s
+.PHONY : Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.s
+
+# target to generate assembly for a file
+Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.cpp.s
+.PHONY : Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.cpp.s
+
 Element/Header/Header.obj: Element/Header/Header.cpp.obj
 .PHONY : Element/Header/Header.obj
 
@@ -223,30 +487,6 @@ Element/Header/Header.s: Element/Header/Header.cpp.s
 Element/Header/Header.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/Header/Header.cpp.s
 .PHONY : Element/Header/Header.cpp.s
-
-Element/Iterator/ElementIterator.obj: Element/Iterator/ElementIterator.cpp.obj
-.PHONY : Element/Iterator/ElementIterator.obj
-
-# target to build an object file
-Element/Iterator/ElementIterator.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/Iterator/ElementIterator.cpp.obj
-.PHONY : Element/Iterator/ElementIterator.cpp.obj
-
-Element/Iterator/ElementIterator.i: Element/Iterator/ElementIterator.cpp.i
-.PHONY : Element/Iterator/ElementIterator.i
-
-# target to preprocess a source file
-Element/Iterator/ElementIterator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/Iterator/ElementIterator.cpp.i
-.PHONY : Element/Iterator/ElementIterator.cpp.i
-
-Element/Iterator/ElementIterator.s: Element/Iterator/ElementIterator.cpp.s
-.PHONY : Element/Iterator/ElementIterator.s
-
-# target to generate assembly for a file
-Element/Iterator/ElementIterator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/Iterator/ElementIterator.cpp.s
-.PHONY : Element/Iterator/ElementIterator.cpp.s
 
 Element/List/List.obj: Element/List/List.cpp.obj
 .PHONY : Element/List/List.obj
@@ -272,6 +512,54 @@ Element/List/List.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/List/List.cpp.s
 .PHONY : Element/List/List.cpp.s
 
+Element/List/ListElement.obj: Element/List/ListElement.cpp.obj
+.PHONY : Element/List/ListElement.obj
+
+# target to build an object file
+Element/List/ListElement.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/List/ListElement.cpp.obj
+.PHONY : Element/List/ListElement.cpp.obj
+
+Element/List/ListElement.i: Element/List/ListElement.cpp.i
+.PHONY : Element/List/ListElement.i
+
+# target to preprocess a source file
+Element/List/ListElement.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/List/ListElement.cpp.i
+.PHONY : Element/List/ListElement.cpp.i
+
+Element/List/ListElement.s: Element/List/ListElement.cpp.s
+.PHONY : Element/List/ListElement.s
+
+# target to generate assembly for a file
+Element/List/ListElement.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/List/ListElement.cpp.s
+.PHONY : Element/List/ListElement.cpp.s
+
+Element/List/ListItem.obj: Element/List/ListItem.cpp.obj
+.PHONY : Element/List/ListItem.obj
+
+# target to build an object file
+Element/List/ListItem.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/List/ListItem.cpp.obj
+.PHONY : Element/List/ListItem.cpp.obj
+
+Element/List/ListItem.i: Element/List/ListItem.cpp.i
+.PHONY : Element/List/ListItem.i
+
+# target to preprocess a source file
+Element/List/ListItem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/List/ListItem.cpp.i
+.PHONY : Element/List/ListItem.cpp.i
+
+Element/List/ListItem.s: Element/List/ListItem.cpp.s
+.PHONY : Element/List/ListItem.s
+
+# target to generate assembly for a file
+Element/List/ListItem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/List/ListItem.cpp.s
+.PHONY : Element/List/ListItem.cpp.s
+
 Element/Paragraph/Paragraph.obj: Element/Paragraph/Paragraph.cpp.obj
 .PHONY : Element/Paragraph/Paragraph.obj
 
@@ -295,6 +583,78 @@ Element/Paragraph/Paragraph.s: Element/Paragraph/Paragraph.cpp.s
 Element/Paragraph/Paragraph.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/Paragraph/Paragraph.cpp.s
 .PHONY : Element/Paragraph/Paragraph.cpp.s
+
+Element/Visitor/DefaultVisitor/DefaultVisitor.obj: Element/Visitor/DefaultVisitor/DefaultVisitor.cpp.obj
+.PHONY : Element/Visitor/DefaultVisitor/DefaultVisitor.obj
+
+# target to build an object file
+Element/Visitor/DefaultVisitor/DefaultVisitor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/Visitor/DefaultVisitor/DefaultVisitor.cpp.obj
+.PHONY : Element/Visitor/DefaultVisitor/DefaultVisitor.cpp.obj
+
+Element/Visitor/DefaultVisitor/DefaultVisitor.i: Element/Visitor/DefaultVisitor/DefaultVisitor.cpp.i
+.PHONY : Element/Visitor/DefaultVisitor/DefaultVisitor.i
+
+# target to preprocess a source file
+Element/Visitor/DefaultVisitor/DefaultVisitor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/Visitor/DefaultVisitor/DefaultVisitor.cpp.i
+.PHONY : Element/Visitor/DefaultVisitor/DefaultVisitor.cpp.i
+
+Element/Visitor/DefaultVisitor/DefaultVisitor.s: Element/Visitor/DefaultVisitor/DefaultVisitor.cpp.s
+.PHONY : Element/Visitor/DefaultVisitor/DefaultVisitor.s
+
+# target to generate assembly for a file
+Element/Visitor/DefaultVisitor/DefaultVisitor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/Visitor/DefaultVisitor/DefaultVisitor.cpp.s
+.PHONY : Element/Visitor/DefaultVisitor/DefaultVisitor.cpp.s
+
+Element/Visitor/HTMLVisitor/HTMLVisitor.obj: Element/Visitor/HTMLVisitor/HTMLVisitor.cpp.obj
+.PHONY : Element/Visitor/HTMLVisitor/HTMLVisitor.obj
+
+# target to build an object file
+Element/Visitor/HTMLVisitor/HTMLVisitor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/Visitor/HTMLVisitor/HTMLVisitor.cpp.obj
+.PHONY : Element/Visitor/HTMLVisitor/HTMLVisitor.cpp.obj
+
+Element/Visitor/HTMLVisitor/HTMLVisitor.i: Element/Visitor/HTMLVisitor/HTMLVisitor.cpp.i
+.PHONY : Element/Visitor/HTMLVisitor/HTMLVisitor.i
+
+# target to preprocess a source file
+Element/Visitor/HTMLVisitor/HTMLVisitor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/Visitor/HTMLVisitor/HTMLVisitor.cpp.i
+.PHONY : Element/Visitor/HTMLVisitor/HTMLVisitor.cpp.i
+
+Element/Visitor/HTMLVisitor/HTMLVisitor.s: Element/Visitor/HTMLVisitor/HTMLVisitor.cpp.s
+.PHONY : Element/Visitor/HTMLVisitor/HTMLVisitor.s
+
+# target to generate assembly for a file
+Element/Visitor/HTMLVisitor/HTMLVisitor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/Visitor/HTMLVisitor/HTMLVisitor.cpp.s
+.PHONY : Element/Visitor/HTMLVisitor/HTMLVisitor.cpp.s
+
+Element/Visitor/MarkDownVisitor/MarkDownVisitor.obj: Element/Visitor/MarkDownVisitor/MarkDownVisitor.cpp.obj
+.PHONY : Element/Visitor/MarkDownVisitor/MarkDownVisitor.obj
+
+# target to build an object file
+Element/Visitor/MarkDownVisitor/MarkDownVisitor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/Visitor/MarkDownVisitor/MarkDownVisitor.cpp.obj
+.PHONY : Element/Visitor/MarkDownVisitor/MarkDownVisitor.cpp.obj
+
+Element/Visitor/MarkDownVisitor/MarkDownVisitor.i: Element/Visitor/MarkDownVisitor/MarkDownVisitor.cpp.i
+.PHONY : Element/Visitor/MarkDownVisitor/MarkDownVisitor.i
+
+# target to preprocess a source file
+Element/Visitor/MarkDownVisitor/MarkDownVisitor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/Visitor/MarkDownVisitor/MarkDownVisitor.cpp.i
+.PHONY : Element/Visitor/MarkDownVisitor/MarkDownVisitor.cpp.i
+
+Element/Visitor/MarkDownVisitor/MarkDownVisitor.s: Element/Visitor/MarkDownVisitor/MarkDownVisitor.cpp.s
+.PHONY : Element/Visitor/MarkDownVisitor/MarkDownVisitor.s
+
+# target to generate assembly for a file
+Element/Visitor/MarkDownVisitor/MarkDownVisitor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MP2.dir\build.make CMakeFiles/MP2.dir/Element/Visitor/MarkDownVisitor/MarkDownVisitor.cpp.s
+.PHONY : Element/Visitor/MarkDownVisitor/MarkDownVisitor.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -329,27 +689,72 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... MP2
-	@echo ... Element/Container/ElementContainer.obj
-	@echo ... Element/Container/ElementContainer.i
-	@echo ... Element/Container/ElementContainer.s
+	@echo ... Document/Builder/ConcreteDocumentBuilder.obj
+	@echo ... Document/Builder/ConcreteDocumentBuilder.i
+	@echo ... Document/Builder/ConcreteDocumentBuilder.s
+	@echo ... Document/Command/ICommand.obj
+	@echo ... Document/Command/ICommand.i
+	@echo ... Document/Command/ICommand.s
+	@echo ... Document/Director/DocumentDirector.obj
+	@echo ... Document/Director/DocumentDirector.i
+	@echo ... Document/Director/DocumentDirector.s
+	@echo ... Document/Document.obj
+	@echo ... Document/Document.i
+	@echo ... Document/Document.s
+	@echo ... Document/DocumentFacade.obj
+	@echo ... Document/DocumentFacade.i
+	@echo ... Document/DocumentFacade.s
+	@echo ... Document/FileFactory/FileFactory.obj
+	@echo ... Document/FileFactory/FileFactory.i
+	@echo ... Document/FileFactory/FileFactory.s
+	@echo ... Document/FileFactory/HTMLFile/HTMLFile.obj
+	@echo ... Document/FileFactory/HTMLFile/HTMLFile.i
+	@echo ... Document/FileFactory/HTMLFile/HTMLFile.s
+	@echo ... Document/FileFactory/MarkDownFile/MarkDownFile.obj
+	@echo ... Document/FileFactory/MarkDownFile/MarkDownFile.i
+	@echo ... Document/FileFactory/MarkDownFile/MarkDownFile.s
+	@echo ... Document/FileFactory/TextFile/TextFile.obj
+	@echo ... Document/FileFactory/TextFile/TextFile.i
+	@echo ... Document/FileFactory/TextFile/TextFile.s
 	@echo ... Element/Creator/ElementCreator.obj
 	@echo ... Element/Creator/ElementCreator.i
 	@echo ... Element/Creator/ElementCreator.s
 	@echo ... Element/Element.obj
 	@echo ... Element/Element.i
 	@echo ... Element/Element.s
+	@echo ... Element/ElementBuilder/HeaderBuilder/HeaderBuilder.obj
+	@echo ... Element/ElementBuilder/HeaderBuilder/HeaderBuilder.i
+	@echo ... Element/ElementBuilder/HeaderBuilder/HeaderBuilder.s
+	@echo ... Element/ElementBuilder/ListBuilder/ListBuilder.obj
+	@echo ... Element/ElementBuilder/ListBuilder/ListBuilder.i
+	@echo ... Element/ElementBuilder/ListBuilder/ListBuilder.s
+	@echo ... Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.obj
+	@echo ... Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.i
+	@echo ... Element/ElementBuilder/ParagraphBuilder/ParagraphBuilder.s
 	@echo ... Element/Header/Header.obj
 	@echo ... Element/Header/Header.i
 	@echo ... Element/Header/Header.s
-	@echo ... Element/Iterator/ElementIterator.obj
-	@echo ... Element/Iterator/ElementIterator.i
-	@echo ... Element/Iterator/ElementIterator.s
 	@echo ... Element/List/List.obj
 	@echo ... Element/List/List.i
 	@echo ... Element/List/List.s
+	@echo ... Element/List/ListElement.obj
+	@echo ... Element/List/ListElement.i
+	@echo ... Element/List/ListElement.s
+	@echo ... Element/List/ListItem.obj
+	@echo ... Element/List/ListItem.i
+	@echo ... Element/List/ListItem.s
 	@echo ... Element/Paragraph/Paragraph.obj
 	@echo ... Element/Paragraph/Paragraph.i
 	@echo ... Element/Paragraph/Paragraph.s
+	@echo ... Element/Visitor/DefaultVisitor/DefaultVisitor.obj
+	@echo ... Element/Visitor/DefaultVisitor/DefaultVisitor.i
+	@echo ... Element/Visitor/DefaultVisitor/DefaultVisitor.s
+	@echo ... Element/Visitor/HTMLVisitor/HTMLVisitor.obj
+	@echo ... Element/Visitor/HTMLVisitor/HTMLVisitor.i
+	@echo ... Element/Visitor/HTMLVisitor/HTMLVisitor.s
+	@echo ... Element/Visitor/MarkDownVisitor/MarkDownVisitor.obj
+	@echo ... Element/Visitor/MarkDownVisitor/MarkDownVisitor.i
+	@echo ... Element/Visitor/MarkDownVisitor/MarkDownVisitor.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
