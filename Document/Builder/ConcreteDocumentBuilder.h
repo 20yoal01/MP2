@@ -21,6 +21,7 @@ public:
     void setTitle(std::string title);
     void replaceText(std::string previousText, std::string newText);
     std::string getTitle() const;
+    void setDocument(Document *document);
     Document* getDocument();
     ConcreteDocumentBuilder();
     ~ConcreteDocumentBuilder();

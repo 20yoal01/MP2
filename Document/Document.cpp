@@ -14,6 +14,7 @@
 Document::Document() : elementCreator(new ElementCreator()), elements(){
     visitor = new DefaultVisitor;
     elementIterator = elements.CreateIterator();
+    extension = DEFAULT;
 }
 
 void Document::setExtension(ExtensionType extension) {

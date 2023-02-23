@@ -48,6 +48,7 @@ public:
     friend class AddParagraphCommand;
     friend class AddHeaderCommand;
     friend class ReplaceTextCommand;
+    friend class ResetCommand;
 };
 
 

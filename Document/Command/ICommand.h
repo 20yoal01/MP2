@@ -105,4 +105,16 @@ public:
     ReplaceTextCommand(DocumentFacade *document, std::string prevText, std::string newText);
 };
 
+class ResetCommand : public ICommand {
+private:
+    DocumentFacade *document;
+    Document *documentFile;
+
+public:
+    void execute() override;
+    void undo() override;
+    void redo() override;
+    ResetCommand(DocumentFacade *document, Document *documentFile);
+};
+
 #endif //MP2_ICOMMAND_H

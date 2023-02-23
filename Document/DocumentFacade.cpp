@@ -50,8 +50,8 @@ void DocumentFacade::previewDocument() {
 }
 
 void DocumentFacade::reset(){
-    documentBuilder->reset();
-    director->setBuilder(documentBuilder);
+    std::shared_ptr<ICommand> c(new ResetCommand(this, documentBuilder->getDocument()));
+    commandManager->executeCmd(c);
 }
 
 void DocumentFacade::setExtension(ExtensionType extension) {

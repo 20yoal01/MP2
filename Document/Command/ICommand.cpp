@@ -43,7 +43,7 @@ void SetExtensionCommand::execute() {
 }
 
 void SetExtensionCommand::redo() {
-    document->documentBuilder->getDocument()->setExtension(oldExtension);
+    document->documentBuilder->getDocument()->setExtension(newExtension);
 }
 
 void SetExtensionCommand::undo() {
@@ -150,3 +150,23 @@ void ReplaceTextCommand::undo() {
     std::swap(newText, prevText);
     document->documentBuilder->replaceText(prevText, newText);
 }
+
+
+ResetCommand::ResetCommand(DocumentFacade *document, Document *documentFile){
+    this->document = document;
+    this->documentFile = documentFile;
+};
+
+void ResetCommand::execute() {
+    document->documentBuilder->reset();
+    document->director->setBuilder(document->documentBuilder);
+}
+
+void ResetCommand::redo() {
+    execute();
+}
+
+void ResetCommand::undo() {
+    document->documentBuilder->setDocument(documentFile);
+}
+

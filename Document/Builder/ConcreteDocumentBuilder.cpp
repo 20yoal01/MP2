@@ -39,6 +39,10 @@ Document* ConcreteDocumentBuilder::getDocument() {
     return document;
 }
 
+void ConcreteDocumentBuilder::setDocument(Document *document){
+    this->document = document;
+}
+
 ConcreteDocumentBuilder::~ConcreteDocumentBuilder(){
     delete document;
 }

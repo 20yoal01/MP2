@@ -42,17 +42,14 @@ int main(){
 
 
     document->setExtension(HTML);
-    document->setTitle("HEEEJ");
-    document->addHeader("HEADER");
-    document->addParagraph("En ny paragraph");
 
-    document->undo();
-    document->undo();
+    document->reset();
     document->undo();
     document->redo();
-    document->redo();
+    document->undo();
 
     document->previewDocument();
+
 
     /*
     document->setExtension(MARKDOWN);
