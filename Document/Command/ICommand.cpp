@@ -14,8 +14,7 @@ void CommandManager::undo() {
     if (mUndoStack.size() <= 0) {
         return;
     }
-    std::shared_ptr<ICommand> tcommand = mUndoStack.top(); // undo most recently executed command
-    tcommand->undo();
+    mUndoStack.top()->undo(); // undo most recently executed command
     mRedoStack.push(mUndoStack.top()); // add undone command to undo stack
     mUndoStack.pop();                  // remove top entry from undo stack
 }
@@ -82,11 +81,11 @@ void SetTitleCommand::execute() {
 }
 
 void SetTitleCommand::redo() {
-    document->setTitle(newTitle);
+    document->documentBuilder->getDocument()->setTitle(newTitle);
 }
 
 void SetTitleCommand::undo() {
-    document->setTitle(oldTitle);
+    document->documentBuilder->getDocument()->setTitle(oldTitle);
 }
 
 

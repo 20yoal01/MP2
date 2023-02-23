@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include "Document/DocumentFacade.h"
 #include "Document/Document.h"
@@ -43,13 +42,18 @@ int main(){
 
 
     document->setExtension(HTML);
+    document->setTitle("HEEEJ");
+    document->addHeader("HEADER");
+    document->addParagraph("En ny paragraph");
 
-
     document->undo();
     document->undo();
     document->undo();
+    document->redo();
+    document->redo();
 
     document->previewDocument();
+
     /*
     document->setExtension(MARKDOWN);
     document->previewDocument();
