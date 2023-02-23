@@ -141,14 +141,14 @@ void ReplaceTextCommand::execute() {
 }
 
 void ReplaceTextCommand::redo() {
-    std::swap(newText, prevText);
     document->documentBuilder->replaceText(prevText, newText);
+    std::swap(newText, prevText);
 }
 
 
 void ReplaceTextCommand::undo() {
-    std::swap(newText, prevText);
     document->documentBuilder->replaceText(prevText, newText);
+    std::swap(newText, prevText);
 }
 
 

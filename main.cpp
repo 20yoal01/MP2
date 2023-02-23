@@ -42,11 +42,18 @@ int main(){
 
 
     document->setExtension(HTML);
+    document->setTitle("HEEEJ");
+    document->addHeader("HEADER");
+    document->addParagraph("En ny paragraph");
 
-    document->reset();
+    document->undo();
+    document->undo();
     document->undo();
     document->redo();
+    document->redo();
+    document->replaceText("HEADER","Header01");
     document->undo();
+    document->redo();
 
     document->previewDocument();
 
